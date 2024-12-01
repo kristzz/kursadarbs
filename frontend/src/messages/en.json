@@ -1,0 +1,18 @@
+{
+    "NavbarLinks": {
+      "jobs": "Jobs",
+      "tasks": "Tasks",
+      "messages": "Messages",
+      "profile": "Profile",
+      "selectLanguage": "Select language"
+    },
+    "Home": {
+      "title": "Welcome to Paidn",
+      "description": "Where a perfect job finds you"
+    },
+    "NotFound": {
+      "title": "Page Not Found",
+      "description": "Sorry, the page you are looking for does not exist.",
+      "backHome": "Go back to homepage"
+    }
+  }

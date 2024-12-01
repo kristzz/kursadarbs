@@ -1,0 +1,18 @@
+{
+    "NavbarLinks": {
+      "jobs": "Darbi",
+      "tasks": "Uzdevumi",
+      "messages": "Ziņas",
+      "profile": "Profils",
+      "selectLanguage": "Izvēlieties valodu"
+    },
+    "Home": {
+      "title": "Laipni lūdzam Paidn",
+      "description": "Kur ideāls darbs atrod jūs"
+    },
+    "NotFound": {
+      "title": "Lapa Nav Atrasta",
+      "description": "Atvainojiet, meklētā lapa neeksistē.",
+      "backHome": "Atgriezties uz sākumlapu"
+    }
+  }
