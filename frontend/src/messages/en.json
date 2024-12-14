@@ -4,6 +4,8 @@
       "tasks": "Tasks",
       "messages": "Messages",
       "profile": "Profile",
+      "login" : "Login",
+      "register" : "Register",
       "selectLanguage": "Select language"
     },
     "Home": {
@@ -15,4 +17,4 @@
       "description": "Sorry, the page you are looking for does not exist.",
       "backHome": "Go back to homepage"
     }
-  }
+}

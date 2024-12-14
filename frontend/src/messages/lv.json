@@ -4,6 +4,8 @@
       "tasks": "Uzdevumi",
       "messages": "Ziņas",
       "profile": "Profils",
+      "login" : "Ienākt",
+      "register" : "Reģistrēties",
       "selectLanguage": "Izvēlieties valodu"
     },
     "Home": {
@@ -15,4 +17,4 @@
       "description": "Atvainojiet, meklētā lapa neeksistē.",
       "backHome": "Atgriezties uz sākumlapu"
     }
-  }
+}
