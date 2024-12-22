@@ -16,5 +16,16 @@
       "title": "Page Not Found",
       "description": "Sorry, the page you are looking for does not exist.",
       "backHome": "Go back to homepage"
+    },
+
+    "Login":{
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "login": "Login",
+      "register": "Register",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "registerNow": "Register now"
     }
 }

@@ -16,5 +16,16 @@
       "title": "Lapa Nav Atrasta",
       "description": "Atvainojiet, meklētā lapa neeksistē.",
       "backHome": "Atgriezties uz sākumlapu"
+    },
+
+    "Login":{
+      "title": "Ienākt",
+      "email": "E-pasts",
+      "password": "Parole",
+      "login": "Ienākt",
+      "register": "Reģistrēties",
+      "forgotPassword": "Aizmirsāt paroli?",
+      "noAccount": "Nav konta?",
+      "registerNow": "Reģistrējieties tagad"
     }
 }
