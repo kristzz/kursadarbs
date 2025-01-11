@@ -21,21 +21,22 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  const locale = params.locale ?? 'en';
+  const { locale = 'en' } = await Promise.resolve(params); 
 
   let messages;
   try {
-    messages = await getMessages(locale);
+    messages = await getMessages({ locale });
   } catch (error) {
     notFound();
   }
+
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar locale={locale} />
-          {children}
+          <div className="pt-24">{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>

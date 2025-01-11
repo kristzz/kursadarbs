@@ -9,15 +9,14 @@
       "selectLanguage": "Select language"
     },
     "Home": {
-      "title": "Welcome to Paidn",
-      "description": "Where a perfect job finds you"
+      "title": "Where a perfect job finds you",
+      "description": "Paidn provides an all-in-one platform where job seekers can explore listings, apply directly, communicate with recruiters, build their resumes, complete tasks, and engage in video calls — all in one place."
     },
     "NotFound": {
       "title": "Page Not Found",
       "description": "Sorry, the page you are looking for does not exist.",
       "backHome": "Go back to homepage"
     },
-
     "Login":{
       "title": "Login",
       "email": "Email",

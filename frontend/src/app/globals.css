@@ -5,15 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #fdfffe;
-  --foreground: #242521;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #26211f;
-    --foreground: #f3f1f1;
-  }
+  --background: #000000;
+  --foreground: #ededed;
+  --primaryc: #5c1a8c;
+  --secondaryc: #2d2969;
+  --accentc: #89239e;
 }
 
 body {
@@ -46,10 +42,35 @@ a {
   font-size: 1.125rem;
   line-height: 1.6;
   font-weight: 500;
-  text-decoration: underline;
-  text-decoration-style: solid;
+  text-decoration: none;
+  color: var(--foreground);
+  position: relative;
   opacity: 80%;
 }
+
+a::before {
+  content: "";
+  background: linear-gradient(to right, var(--foreground) 45%, rgba(237, 237, 237, 0.3) 55%);
+  background-size: 220% 100%;
+  background-position: 100% 50%;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  transition: .3s ease-out;
+}
+
+a:hover::before {
+  background-position: 0% 50%;
+}
+
+a:focus::before {
+  background: linear-gradient(to right, var(--primaryc) 100%, rgba(137, 35, 158, 0.3) 55%);
+  background-position: 0% 50%;
+}
+
 
 @media (min-width: 640px) {
   h1 {
@@ -73,3 +94,4 @@ a:hover {
   opacity: 100%;
   cursor: pointer;
 }
+

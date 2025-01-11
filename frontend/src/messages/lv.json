@@ -10,14 +10,13 @@
     },
     "Home": {
       "title": "Laipni lūdzam Paidn",
-      "description": "Kur ideāls darbs atrod jūs"
+      "description": "Paidn nodrošina vienotu platformu, kur jūs varat apskatīt vakances, pieteikties tām, sazināties ar darba devējiem, veidot savus CV, pildīt uzdevumus un piedalīties videozvanos – viss vienuviet."
     },
     "NotFound": {
       "title": "Lapa Nav Atrasta",
       "description": "Atvainojiet, meklētā lapa neeksistē.",
       "backHome": "Atgriezties uz sākumlapu"
     },
-
     "Login":{
       "title": "Ienākt",
       "email": "E-pasts",

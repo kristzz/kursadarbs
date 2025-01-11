@@ -11,21 +11,15 @@ export default {
     extend: {
       screens: {
         sm: "640px",    // Mobile screens
-        md: "768px",    // Tablet portrait mode
         lg: "1024px",   // Tablet landscape mode
         xl: "1280px",   // Desktop screens
-        "2xl": "1536px", // Large desktops
       },
       colors: {
-        // dark mode
-        darkBrown: '#26211f',
-        darkWhite: '#f3f1f1',
-        darkGreen: '#4ba975',
-
-        // light mode
-        lightWhite: '#fdfffe',
-        lightGray: '#242521',
-        lightbrown: '#93603f',
+        backgroundc: '#000000',
+        textc: '#ededed',
+        primaryc: '#5c1a8c',
+        secondaryc: '#2d2969',
+        accentc: '#89239e',
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
