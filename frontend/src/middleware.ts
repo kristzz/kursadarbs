@@ -1,11 +1,12 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest } from 'next/server';
 
-const locales = ['en', 'lv'];
+const locales = ['en', 'lv'] as const;
 
 const intlMiddleware = createMiddleware({
   locales,
-  defaultLocale: 'en'
+  defaultLocale: 'en',
+  localeDetection: true
 });
 
 export default function middleware(req: NextRequest) {
