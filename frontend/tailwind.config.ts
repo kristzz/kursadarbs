@@ -9,13 +9,9 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        sm: "640px",    // Mobile screens
-        lg: "1024px",   // Tablet landscape mode
-        xl: "1280px",   // Desktop screens
-      },
       colors: {
-        backgroundc: '#000000',
+        backgroundc: '#0E0D0D',
+        componentbgc: '#141414',
         textc: '#ededed',
         primaryc: '#5c1a8c',
         secondaryc: '#2d2969',
