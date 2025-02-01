@@ -26,5 +26,36 @@
       "forgotPassword": "Aizmirsāt paroli?",
       "noAccount": "Nav konta?",
       "registerNow": "Reģistrējieties tagad"
-    }
+    },
+    "Register": {
+    "title": "Iepazīstini ar sevi!",
+    "nameis": "Mani sauc",
+    "enterName": "Ievadiet savu vārdu *",
+    "from": "no",
+    "enterCountry": "Ievadiet valsts nosaukumu",
+    "availableAt": "Pieejams te",
+    "enterEmail": "Ievadiet savu e-pastu *",
+    "passwordLogin": "Šo paroli izmantošu, lai pierakstītos",
+    "enterPassword": "Ievadiet savu paroli *",
+    "confirmIt": "Šeit es to apstiprinu",
+    "confirmPassword": "Apstipriniet savu paroli *",
+    "specializeIn": "Es specializējos",
+    "selectProfession": "Izvēlieties savu profesiju *",
+    "programmer": "Programmētājs",
+    "mechanic": "Mehāniķis",
+    "doctor": "Ārsts",
+    "tryingTo": "Es cenšos",
+    "findWork": "Atrast darbu",
+    "provideWork": "Piedāvāt darbu",
+    "heardFrom": "Par Paidn uzzināju no",
+    "google": "Google",
+    "socialMedia": "Sociālajiem tīkliem",
+    "friends": "Draugiem",
+    "ads": "Reklāmām",
+    "agreeTo": "Es piekrītu",
+    "terms": "Noteikumiem un nosacījumiem",
+    "submit": "Iesniegt",
+    "selectCountry": "Izvēlieties valsti",
+    "enterCountryName": "Ievadiet valsts nosaukumu"
+  }
 }

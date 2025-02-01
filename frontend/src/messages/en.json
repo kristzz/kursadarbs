@@ -26,5 +26,36 @@
       "forgotPassword": "Forgot password?",
       "noAccount": "Don't have an account?",
       "registerNow": "Register now"
-    }
+    },
+    "Register": {
+    "title": "Introduce yourself!",
+    "nameis": "My name is",
+    "enterName": "Enter your name *",
+    "from": "from",
+    "enterCountry": "Enter city name",
+    "availableAt": "Available at",
+    "enterEmail": "Enter your email *",
+    "passwordLogin": "I'll use this password to log in",
+    "enterPassword": "Enter your password *",
+    "confirmIt": "Here, I confirm it",
+    "confirmPassword": "Confirm your password *",
+    "specializeIn": "I specialize in",
+    "selectProfession": "Select your profession *",
+    "programmer": "Programmer",
+    "mechanic": "Mechanic",
+    "doctor": "Doctor",
+    "tryingTo": "I am trying to",
+    "findWork": "Find work",
+    "provideWork": "Provide work",
+    "heardFrom": "I've heard of Paidn from",
+    "google": "Google",
+    "socialMedia": "Social media",
+    "friends": "Friends",
+    "ads": "Ads",
+    "agreeTo": "I agree to the",
+    "terms": "Terms and Conditions",
+    "submit": "Submit",
+    "selectCountry": "Select Country",
+    "enterCountryName": "Enter country name"
+  }
 }
