@@ -1,5 +1,4 @@
 "use client";
-
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -11,7 +10,6 @@ const Navbar = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
   const pathname = usePathname();
   const router = useRouter();
-
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,17 +28,10 @@ const Navbar = ({ locale }: { locale: string }) => {
 
   return (
     <div className="relative">
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-backgroundc opacity-50 z-10"
-          onClick={closeMenu}
-        ></div>
-      )}
-
-      <header className="fixed w-full p-4 items-center justify-between bg-transparent z-20 flex">
+      <header className="fixed w-full p-4 items-center justify-between bg-transparent z-20 flex max-w-full overflow-hidden">
         <div className="w-20"></div>
-
-        <nav className="flex justify-center gap-8 flex-grow hidden lg:flex">
+        {/* Desktop Navigation */}
+        <nav className="justify-center gap-8 flex-grow md:flex hidden">
           <Link href={`/${locale}/jobs`} className="duration-150">{t("jobs")}</Link>
           <Link href={`/${locale}/tasks`} className="duration-150">{t("tasks")}</Link>
           <Link href={`/${locale}/messages`} className="duration-150">{t("messages")}</Link>
@@ -51,23 +42,21 @@ const Navbar = ({ locale }: { locale: string }) => {
           {!isAuthenticated && (
             <>
               <Link href={`/${locale}/auth/login`} className="text-sm duration-150">{t("login")}</Link>
-              <Link href={`/${locale}/auth/register`} className="text-sm duration-150 hidden sm:inline-block">{t("register")}</Link>
+              <Link href={`/${locale}/auth/register`} className="text-sm duration-150">{t("register")}</Link>
             </>
           )}
-
           <select
             value={locale}
             onChange={handleLanguageChange}
             aria-label={t("selectLanguage")}
-            className="text-textc bg-backgroundc rounded-md px-2 py-1 focus:ring-2 focus:ring-primaryc duration-150 font-sans"
+            className="text-textc bg-backgroundc rounded-md px-2 py-1 focus:ring-2 focus:ring-accentc duration-150 font-sans"
             style={{ border: "1px solid rgba(237, 237, 237, 0.5)" }}
           >
             <option value="en">EN</option>
             <option value="lv">LV</option>
           </select>
-
           <button
-            className="lg:hidden text-cgray"
+            className="md:hidden text-cgray"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -76,13 +65,22 @@ const Navbar = ({ locale }: { locale: string }) => {
         </div>
       </header>
 
+      {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed top-16 left-0 w-full bg-cblack bg-opacity-80 p-4 pb-16 z-20">
-          <nav className="flex flex-col items-center gap-4">
-            <Link href={`/${locale}/jobs`} className="duration-150" onClick={closeMenu}>{t("jobs")}</Link>
-            <Link href={`/${locale}/tasks`} className="duration-150" onClick={closeMenu}>{t("tasks")}</Link>
-            <Link href={`/${locale}/messages`} className="duration-150" onClick={closeMenu}>{t("messages")}</Link>
-            <Link href={`/${locale}/profile`} className="duration-150" onClick={closeMenu}>{t("profile")}</Link>
+        <div className="md:hidden fixed top-16 left-0 w-full bg-backgroundc/85 p-4 z-20 overflow-auto max-w-full">
+          <nav className="flex flex-col items-center gap-4 w-full">
+            <Link href={`/${locale}/jobs`} className="duration-150 w-full text-center text-base" onClick={closeMenu}>
+              {t("jobs")}
+            </Link>
+            <Link href={`/${locale}/tasks`} className="duration-150 w-full text-center text-base" onClick={closeMenu}>
+              {t("tasks")}
+            </Link>
+            <Link href={`/${locale}/messages`} className="duration-150 w-full text-center text-base" onClick={closeMenu}>
+              {t("messages")}
+            </Link>
+            <Link href={`/${locale}/profile`} className="duration-150 w-full text-center text-base" onClick={closeMenu}>
+              {t("profile")}
+            </Link>
           </nav>
         </div>
       )}
@@ -91,4 +89,3 @@ const Navbar = ({ locale }: { locale: string }) => {
 };
 
 export default Navbar;
-
