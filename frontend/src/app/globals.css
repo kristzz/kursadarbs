@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #000000;
+  --background: #0E0D0D;
+  --componentbgc: #141414;
   --foreground: #ededed;
   --primaryc: #5c1a8c;
   --secondaryc: #2d2969;
@@ -71,6 +72,19 @@ a:focus::before {
   background-position: 0% 50%;
 }
 
+select{
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+}
+
+select option {
+  background-color: var(--background) !important;
+}
+
+option{
+  font-family: 'Montserrat', sans-serif;
+}
 
 @media (min-width: 640px) {
   h1 {
