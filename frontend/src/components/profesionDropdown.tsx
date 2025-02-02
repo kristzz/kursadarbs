@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { BiChevronDown } from 'react-icons/bi';
 
 interface DropdownProps {
   selected: string;
@@ -24,14 +25,14 @@ const profesionDropdown = ({ selected, setSelected, options }: DropdownProps) =>
   }, []);
 
   return (
-    <div className="relative min-w-[200px]" ref={dropdownRef}>
+    <div className="relative min-w-[240px]" ref={dropdownRef}>
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-2 py-1 border-b border-white text-inherit text-left flex justify-between items-center"
       >
         {selected}
-        <span className={`transform ml-2 transition-transform ${isOpen ? 'rotate-180' : ''}`}>˅</span>
+        <BiChevronDown size={20} className={`${isOpen ? 'rotate-180' : ''}`} />
       </button>
       {isOpen && (
         <ul className="absolute left-0 right-0 mt-1 border border-white bg-backgroundc w-full z-10">
