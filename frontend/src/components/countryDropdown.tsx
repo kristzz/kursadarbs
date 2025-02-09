@@ -15,12 +15,21 @@ const CountryDropdown = ({ selected, setSelected }: CountryDropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
+  const fetchCountries = async () => {
+    try {
+      const response = await fetch('https://restcountries.com/v3.1/all?fields=name');
+      const data = await response.json();
+      return data.map((country: any) => country.name.common);
+    } catch (error) {
+      console.error('Error fetching countries:', error);
+      return [];
+    }
+  };
+
   useEffect(() => {
-    fetch('https://restcountries.com/v2/all?fields=name')
-      .then((res) => res.json())
-      .then((data) => {
-        setCountries(data);
-      });
+    fetchCountries().then((data) => {
+      setCountries(data);
+    });
   }, []);
 
   useEffect(() => {
@@ -62,21 +71,21 @@ const CountryDropdown = ({ selected, setSelected }: CountryDropdownProps) => {
 
           {countries
             .filter((country) =>
-              country.name.toLowerCase().includes(inputValue.toLowerCase())
+              country.toLowerCase().includes(inputValue.toLowerCase())
             )
             .map((country) => (
               <li
-                key={country.name}
+                key={country}
                 className={`p-2 text-sm hover:bg-primaryc text-white text-left cursor-pointer ${
-                  country.name.toLowerCase() === selected.toLowerCase() && 'bg-primaryc'
+                  country.toLowerCase() === selected.toLowerCase() && 'bg-primaryc'
                 }`}
                 onClick={() => {
-                  setSelected(country.name);
+                  setSelected(country);
                   setIsOpen(false);
                   setInputValue('');
                 }}
               >
-                {country.name}
+                {country}
               </li>
             ))}
         </ul>
