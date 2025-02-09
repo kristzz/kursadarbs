@@ -56,6 +56,10 @@
     "terms": "Terms and Conditions",
     "submit": "Submit",
     "selectCountry": "Select Country",
-    "enterCountryName": "Enter country name"
+    "enterCountryName": "Enter country name",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "allFieldsRequired": "All fields are required",
+    "registrationFailed": "Registration failed",
+    "submitting": "Submitting..."
   }
 }

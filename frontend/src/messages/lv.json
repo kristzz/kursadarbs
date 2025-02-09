@@ -56,6 +56,10 @@
     "terms": "Noteikumiem un nosacījumiem",
     "submit": "Iesniegt",
     "selectCountry": "Izvēlieties valsti",
-    "enterCountryName": "Ievadiet valsts nosaukumu"
+    "enterCountryName": "Ievadiet valsts nosaukumu",
+    "passwordsDoNotMatch": "Paroles nesakrīt",
+    "allFieldsRequired": "Visi lauki ir obligāti",
+    "registrationFailed": "Reģistrācija neizdevās",
+    "submitting": "Notiek iesniegšana..."
   }
 }
