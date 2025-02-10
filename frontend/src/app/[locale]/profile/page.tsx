@@ -7,9 +7,7 @@ import ProfileSection from '@/components/ProfileSection';
 import AddSectionForm from '@/components/AddSectionForm';
 import { getCsrfToken } from '@/services/auth';
 import { Spinner } from '@/components/spinner';
-import { Switch } from '@/components/Switch';
-import { Trash2, Clock } from 'lucide-react';
-import { getGridStyles } from '@/utils/gridStyles';
+import Masonry from 'react-masonry-css';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
 
@@ -20,6 +18,29 @@ const formatDate = (dateString: string | null): string => {
         year: 'numeric', 
         month: 'short'
     });
+};
+
+// Define type for section types
+type BorderStylesType = {
+    [key in SectionType]: string;
+};
+
+// Define the borderStyles object with proper typing
+const borderStyles: BorderStylesType = {
+    [SectionType.WORK_EXPERIENCE]: "border-primaryc/30 hover:border-primaryc/50",
+    [SectionType.EDUCATION]: "border-accentc/30 hover:border-accentc/50",
+    [SectionType.PROJECT]: "border-secondaryc/30 hover:border-secondaryc/50",
+    [SectionType.SKILL]: "border-primaryc/30 hover:border-primaryc/50",
+    [SectionType.AWARD]: "border-accentc/30 hover:border-accentc/50",
+    [SectionType.LANGUAGE]: "border-secondaryc/30 hover:border-secondaryc/50",
+    [SectionType.CERTIFICATION]: "border-primaryc/30 hover:border-primaryc/50"
+};
+
+// Add these breakpoints for responsive layout
+const breakpointColumns = {
+    default: 3,  // Desktop: 3 columns
+    1024: 2,     // Tablet: 2 columns
+    640: 1       // Mobile: 1 column
 };
 
 export default function ProfilePage(): JSX.Element {
@@ -280,7 +301,11 @@ export default function ProfilePage(): JSX.Element {
             )}
 
             {/* Dynamic grid layout - changed grid-cols-6 to grid-cols-1 for mobile */}
-            <div className="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-6">
+            <Masonry
+                breakpointCols={breakpointColumns}
+                className="flex w-full -ml-4" // Negative margin to offset item padding
+                columnClassName="pl-4" // Padding for each column
+            >
                 {(() => {
                     const activeSections = Object.entries(groupedSections)
                         .filter(([_, sections]) => sections.length > 0);
@@ -288,34 +313,22 @@ export default function ProfilePage(): JSX.Element {
                     const totalSections = activeSections.length;
 
                     return activeSections.map(([type, sections], index) => {
-                        const gridStyle = getGridStyles(type, index, totalSections);
-                        const borderStyles = {
-                            [SectionType.WORK_EXPERIENCE]: "border-primaryc/30 hover:border-primaryc/50",
-                            [SectionType.EDUCATION]: "border-accentc/30 hover:border-accentc/50",
-                            [SectionType.PROJECT]: "border-secondaryc/30 hover:border-secondaryc/50",
-                            [SectionType.SKILL]: "border-primaryc/30 hover:border-primaryc/50",
-                            [SectionType.AWARD]: "border-accentc/30 hover:border-accentc/50",
-                            [SectionType.LANGUAGE]: "border-secondaryc/30 hover:border-secondaryc/50",
-                            [SectionType.CERTIFICATION]: "border-primaryc/30 hover:border-primaryc/50",
-                        }[type] || "border-textc/30 hover:border-textc/50";
-
                         return (
                             <div 
                                 key={type}
                                 className={`
-                                    ${gridStyle}
+                                    mb-4 w-full
                                     bg-componentbgc rounded-lg border
-                                    ${borderStyles}
+                                    ${borderStyles[type as SectionType] || "border-textc/30 hover:border-textc/50"}
                                     p-4 sm:p-6 
-                                    transition-all duration-300 
+                                    transition-transform duration-300 ease-out
                                     hover:shadow-lg hover:-translate-y-0.5
-                                    mb-4 sm:mb-0
                                 `}
                             >
                                 <h2 className="text-xl sm:text-2xl font-bold text-textc mb-4">
                                     {sectionTypeNames[type as SectionType]}
                                 </h2>
-                                <div className="space-y-4 overflow-y-auto max-h-60 pr-2 scrollbar-thin scrollbar-thumb-textc/20 scrollbar-track-transparent hover:scrollbar-thumb-textc/30">
+                                <div className="space-y-4">
                                     {sections.map((section) => (
                                         <ProfileSection 
                                             key={section.id} 
@@ -329,7 +342,7 @@ export default function ProfilePage(): JSX.Element {
                         );
                     });
                 })()}
-            </div>
+            </Masonry>
 
             {sections.length === 0 && (
                 <div className="text-textc/60 text-center p-8 bg-componentbgc rounded-lg border border-textc/20">
