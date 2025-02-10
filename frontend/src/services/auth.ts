@@ -59,6 +59,29 @@ export const register = async (data: RegisterData) => {
     }
 };
 
+export const login = async (email: string, password: string) => {
+    try {
+        // Get CSRF token before making the login request
+        await getCsrfToken();
+
+        const response = await axios.post(`${API_URL}/login`, { email, password }, {
+            withCredentials: true,
+        });
+
+        if (response.data.token) {
+            localStorage.setItem('auth_token', response.data.token);
+            axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
+        }
+
+        return response.data;
+    } catch (error: any) {
+        if (error.response) {
+            throw new Error(error.response.data.message || 'Login failed');
+        }
+        throw new Error('Network error');
+    }
+};
+
 export const logout = async () => {
     try {
         const response = await axios.post(`${API_URL}/logout`);
