@@ -1,32 +1,12 @@
 "use client"
 
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { ProfileSection as ProfileSectionType, UserProfile, SectionType } from '@/types/profile';
-import ProfileSection from '@/components/ProfileSection';
-import AddSectionForm from '@/components/AddSectionForm';
-import { getCsrfToken } from '@/services/auth';
+import { useEffect, useState, useMemo, useCallback } from 'react';
+import dynamic from 'next/dynamic';
+import { SectionType, UserProfile, ProfileSection } from '@/types/profile';
+import { getCsrfToken, api } from '@/services/auth';
 import { Spinner } from '@/components/spinner';
-import Masonry from 'react-masonry-css';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
-
-const formatDate = (dateString: string | null): string => {
-    if (!dateString) return '';
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-        year: 'numeric', 
-        month: 'short'
-    });
-};
-
-// Define type for section types
-type BorderStylesType = {
-    [key in SectionType]: string;
-};
-
-// Define the borderStyles object with proper typing
-const borderStyles: BorderStylesType = {
+const BORDER_STYLES = {
     [SectionType.WORK_EXPERIENCE]: "border-primaryc/30 hover:border-primaryc/50",
     [SectionType.EDUCATION]: "border-accentc/30 hover:border-accentc/50",
     [SectionType.PROJECT]: "border-secondaryc/30 hover:border-secondaryc/50",
@@ -34,92 +14,84 @@ const borderStyles: BorderStylesType = {
     [SectionType.AWARD]: "border-accentc/30 hover:border-accentc/50",
     [SectionType.LANGUAGE]: "border-secondaryc/30 hover:border-secondaryc/50",
     [SectionType.CERTIFICATION]: "border-primaryc/30 hover:border-primaryc/50"
-};
+} as const;
 
-// Add these breakpoints for responsive layout
+const SECTION_TYPE_NAMES = {
+    [SectionType.EDUCATION]: 'Education',
+    [SectionType.WORK_EXPERIENCE]: 'Work Experience',
+    [SectionType.CERTIFICATION]: 'Certifications',
+    [SectionType.PROJECT]: 'Projects',
+    [SectionType.SKILL]: 'Skills & Technologies',
+    [SectionType.AWARD]: 'Awards',
+    [SectionType.LANGUAGE]: 'Languages',
+} as const;
+
 const breakpointColumns = {
-    default: 3,  // Desktop: 3 columns
-    1024: 2,     // Tablet: 2 columns
-    640: 1       // Mobile: 1 column
+    default: 3,
+    1024: 2,
+    640: 1
 };
 
-export default function ProfilePage(): JSX.Element {
-    const [sections, setSections] = useState<ProfileSectionType[]>([]);
-    const [error, setError] = useState<string>('');
+const Masonry = dynamic(() => import('react-masonry-css'), { ssr: false });
+const ProfileSectionComponent = dynamic(() => import('@/components/ProfileSection'));
+const AddSectionForm = dynamic(() => import('@/components/AddSectionForm'));
+
+const ProfilePage = () => {
+    const [sections, setSections] = useState<ProfileSection[]>([]);
+    const [error, setError] = useState('');
     const [isInitialLoading, setIsInitialLoading] = useState(true);
     const [isUpdating, setIsUpdating] = useState(false);
     const [showAddForm, setShowAddForm] = useState(false);
     const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
 
-    // Update the groupedSections object to include all section types
-    const groupedSections = {
-        [SectionType.EDUCATION]: sections.filter(s => s.section_type === SectionType.EDUCATION),
-        [SectionType.WORK_EXPERIENCE]: sections.filter(s => s.section_type === SectionType.WORK_EXPERIENCE),
-        [SectionType.CERTIFICATION]: sections.filter(s => s.section_type === SectionType.CERTIFICATION),
-        [SectionType.PROJECT]: sections.filter(s => s.section_type === SectionType.PROJECT),
-        [SectionType.SKILL]: sections.filter(s => s.section_type === SectionType.SKILL),
-        [SectionType.AWARD]: sections.filter(s => s.section_type === SectionType.AWARD),
-        [SectionType.LANGUAGE]: sections.filter(s => s.section_type === SectionType.LANGUAGE),
-    };
-
-    // Update section type display names
-    const sectionTypeNames = {
-        [SectionType.EDUCATION]: 'Education',
-        [SectionType.WORK_EXPERIENCE]: 'Work Experience',
-        [SectionType.CERTIFICATION]: 'Certifications',
-        [SectionType.PROJECT]: 'Projects',
-        [SectionType.SKILL]: 'Skills & Technologies',
-        [SectionType.AWARD]: 'Awards',
-        [SectionType.LANGUAGE]: 'Languages',
-    };
-
-    const fetchUserProfile = async () => {
+    const fetchData = useCallback(async () => {
         try {
-            const response = await axios.get(`${API_URL}/user/profile`, {
-                withCredentials: true,
-                headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('auth_token')}`,
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                }
-            });
+            const [profileRes, sectionsRes] = await Promise.all([
+                api.get('/user/profile'),
+                api.get('/profile/sections')
+            ]);
+
+            // Handle API response structure variations
+            const sectionsData = sectionsRes.data?.sections || sectionsRes.data || [];
             
-            if (response.data.user) {
-                setUserProfile(response.data.user);
-            } else {
-                console.error('Profile fetch failed: No user data in response');
-                setError('Failed to load profile data');
-            }
+            setUserProfile(profileRes.data?.user || null);
+            setSections(Array.isArray(sectionsData) ? sectionsData : []);
         } catch (err) {
-            console.error('Profile fetch error:', err);
-            setError(err instanceof Error ? err.message : 'Failed to load profile');
+            console.error('Fetch error:', err);
+            setError(err instanceof Error ? err.message : 'Failed to load data');
         }
-    };
+    }, []);
 
-    const fetchSections = async () => {
-        try {
-            const response = await axios.get(`${API_URL}/profile/sections`, {
-                withCredentials: true,
-                headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('auth_token')}`,
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                }
-            });
+    const groupedSections = useMemo(() => {
+        const groups = Object.values(SectionType).reduce((acc, type) => {
+            acc[type] = sections.filter(s => s.section_type?.toUpperCase() === type);
+            return acc;
+        }, {} as Record<SectionType, ProfileSection[]>);
+        
+        return groups;
+    }, [sections]);
 
-            if (response.data.status) {
-                setSections(response.data.sections);
-            } else {
-                console.error('Sections fetch failed:', response.data.message);
-                setError('Failed to load sections');
+    useEffect(() => {
+        let isMounted = true;
+        
+        const initialize = async () => {
+            try {
+                await getCsrfToken();
+                await fetchData();
+            } catch (err) {
+                console.error('Initialization error:', err);
+                if (isMounted) setError('Failed to load profile data');
+            } finally {
+                if (isMounted) setIsInitialLoading(false);
             }
-        } catch (err) {
-            console.error('Sections fetch error:', err);
-            setError(err instanceof Error ? err.message : 'Failed to load sections');
-        }
-    };
+        };
 
-    const handleAddSection = async (formData: {
+        initialize();
+
+        return () => { isMounted = false; };
+    }, [fetchData]);
+
+    const handleAddSection = useCallback(async (formData: {
         section_type: SectionType;
         description: string;
         institution: string;
@@ -129,124 +101,55 @@ export default function ProfilePage(): JSX.Element {
     }) => {
         setIsUpdating(true);
         try {
-            await getCsrfToken();
-            const response = await axios.post(
-                `${API_URL}/profile/sections`,
-                formData,
-                {
-                    withCredentials: true,
-                    headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
-                    }
-                }
-            );
-            // Handle nested response data
-            const newSection = response.data.section || response.data;
-            setSections(prev => Array.isArray(prev) ? [...prev, newSection] : [newSection]);
+            const response = await api.post('/profile/sections', formData);
+            setSections(prev => [...prev, response.data.section]);
             setShowAddForm(false);
         } catch (err) {
             setError(err instanceof Error ? err.message : 'Failed to add section');
         } finally {
             setIsUpdating(false);
         }
-    };
+    }, []);
 
-    const handleToggleVisibility = async (id: number) => {
-        // Optimistic update
-        setSections(prev => prev.map(section => 
-            section.id === id 
-                ? { ...section, is_public: !section.is_public }
-                : section
+    const handleToggleVisibility = useCallback(async (id: number) => {
+        setSections(prev => prev.map(s => 
+            s.id === id ? { ...s, is_public: !s.is_public } : s
         ));
 
         try {
-            await getCsrfToken();
-            await axios.post(
-                `${API_URL}/profile/sections/${id}/toggle`,
-                {},
-                {
-                    withCredentials: true,
-                    headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
-                    }
-                }
-            );
+            await api.post(`/profile/sections/${id}/toggle`);
         } catch (err) {
-            // Revert on error
-            setSections(prev => prev.map(section => 
-                section.id === id 
-                    ? { ...section, is_public: !section.is_public }
-                    : section
+            setSections(prev => prev.map(s => 
+                s.id === id ? { ...s, is_public: !s.is_public } : s
             ));
-            setError(err instanceof Error ? err.message : 'Failed to toggle visibility');
         }
-    };
+    }, []);
 
-    const handleDeleteSection = async (id: number) => {
-        if (!window.confirm('Are you sure you want to delete this section?')) {
-            return;
-        }
+    const handleDeleteSection = useCallback(async (id: number) => {
+        if (!confirm('Are you sure you want to delete this section?')) return;
 
         setIsUpdating(true);
         try {
-            await getCsrfToken();
-            await axios.delete(`${API_URL}/profile/sections/${id}`, {
-                withCredentials: true,
-                headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
-                }
-            });
-            
-            // Optimistic update
-            setSections(prev => prev.filter(section => section.id !== id));
+            await api.delete(`/profile/sections/${id}`);
+            setSections(prev => prev.filter(s => s.id !== id));
         } catch (err) {
             setError(err instanceof Error ? err.message : 'Failed to delete section');
-            await fetchSections(); // Refresh the sections in case of error
+            await fetchData();
         } finally {
             setIsUpdating(false);
         }
-    };
+    }, [fetchData]);
 
-    useEffect(() => {
-        const initializePage = async () => {
-            try {
-                await getCsrfToken();
-                await Promise.all([fetchUserProfile(), fetchSections()]);
-            } catch (err) {
-                console.error('Initialization error:', err);
-                setError(err instanceof Error ? err.message : 'Failed to initialize page');
-            } finally {
-                setIsInitialLoading(false);
-            }
-        };
-
-        initializePage();
-    }, []);
-
-    // Debug logs for state changes
-    useEffect(() => {
-        
-    }, [userProfile]);
-
-    useEffect(() => {
-
-    }, [sections]);
-
-    if (isInitialLoading) {
-        return <Spinner />;
-    }
+    if (isInitialLoading) return <Spinner />;
 
     return (
         <div className="p-4 max-w-7xl mx-auto relative">
             {isUpdating && (
                 <div className="absolute inset-0 bg-backgroundc/50 backdrop-blur-sm z-10" />
             )}
-            
-            {/* Header section - reorganized for mobile */}
-            <div className="grid grid-cols-3 gap-4 mb-4">
-                {/* Profile Picture - 1/3 width */}
-                <div className="col-span-1 bg-componentbgc rounded-lg border border-textc/20 p-6 flex items-center justify-center
-                    transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div className="col-span-1 bg-componentbgc rounded-lg border border-textc/20 p-6 flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                     <div className="w-24 h-24 rounded-full bg-primaryc/20 flex items-center justify-center">
                         <span className="text-4xl font-bold text-textc">
                             {userProfile?.name?.charAt(0) || '?'}
@@ -254,9 +157,7 @@ export default function ProfilePage(): JSX.Element {
                     </div>
                 </div>
 
-                {/* Info Container - 2/3 width */}
-                <div className="col-span-2 md:col-span-1 bg-componentbgc rounded-lg border border-textc/20 p-6 flex flex-col justify-center
-                    transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                <div className="col-span-2 md:col-span-1 bg-componentbgc rounded-lg border border-textc/20 p-6 flex flex-col justify-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                     <div>
                         <h1 className="text-2xl font-bold text-textc mb-1">{userProfile?.name}</h1>
                         <p className="text-lg text-textc/80 mb-1">{userProfile?.profession || 'Add your profession'}</p>
@@ -269,21 +170,12 @@ export default function ProfilePage(): JSX.Element {
                     </div>
                 </div>
 
-                {/* Add Button Container */}
                 <button
                     onClick={() => setShowAddForm(true)}
-                    className="group bg-componentbgc rounded-lg border-2 border-dashed border-textc/20 p-6 
-                        flex flex-col col-span-3 md:col-span-1 items-center justify-center gap-3 transition-all duration-200
-                        hover:border-primaryc/50 hover:bg-primaryc/5 active:transform active:scale-[0.98]"
+                    className="group bg-componentbgc rounded-lg border-2 border-dashed border-textc/20 p-6 flex flex-col col-span-3 md:col-span-1 items-center justify-center gap-3 transition-all duration-200 hover:border-primaryc/50 hover:bg-primaryc/5 active:transform active:scale-[0.98]"
                 >
-                    <div className="w-12 h-12 rounded-full bg-primaryc/20 flex items-center justify-center 
-                        group-hover:bg-primaryc/30 transition-colors duration-200">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            className="h-6 w-6 text-textc transition-transform group-hover:rotate-90 duration-200" 
-                            viewBox="0 0 20 20" 
-                            fill="currentColor"
-                        >
+                    <div className="w-12 h-12 rounded-full bg-primaryc/20 flex items-center justify-center group-hover:bg-primaryc/30 transition-colors duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-textc transition-transform group-hover:rotate-90 duration-200" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
                         </svg>
                     </div>
@@ -293,55 +185,39 @@ export default function ProfilePage(): JSX.Element {
                 </button>
             </div>
 
-            {/* Error Message */}
             {error && (
                 <div className="md:col-span-3 bg-red-500/10 border border-red-500 text-red-500 p-4 rounded-lg">
                     {error}
                 </div>
             )}
 
-            {/* Dynamic grid layout - changed grid-cols-6 to grid-cols-1 for mobile */}
-            <Masonry
-                breakpointCols={breakpointColumns}
-                className="flex w-full -ml-4" // Negative margin to offset item padding
-                columnClassName="pl-4" // Padding for each column
-            >
-                {(() => {
-                    const activeSections = Object.entries(groupedSections)
-                        .filter(([_, sections]) => sections.length > 0);
-                    
-                    const totalSections = activeSections.length;
-
-                    return activeSections.map(([type, sections], index) => {
-                        return (
-                            <div 
-                                key={type}
-                                className={`
-                                    mb-4 w-full
-                                    bg-componentbgc rounded-lg border
-                                    ${borderStyles[type as SectionType] || "border-textc/30 hover:border-textc/50"}
-                                    p-4 sm:p-6 
-                                    transition-transform duration-300 ease-out
-                                    hover:shadow-lg hover:-translate-y-0.5
-                                `}
-                            >
-                                <h2 className="text-xl sm:text-2xl font-bold text-textc mb-4">
-                                    {sectionTypeNames[type as SectionType]}
-                                </h2>
-                                <div className="space-y-4">
-                                    {sections.map((section) => (
-                                        <ProfileSection 
-                                            key={section.id} 
-                                            section={section} 
-                                            onToggleVisibility={handleToggleVisibility} 
-                                            onDelete={handleDeleteSection} 
-                                        />
-                                    ))}
-                                </div>
+                <Masonry
+                breakpointCols={{ default: 3, 1280: 2, 800: 1 }} // Match grid columns
+                className="flex w-full gap-4 col-span-3"
+                columnClassName=""
+                >
+                {Object.entries(groupedSections)
+                    .filter(([_, s]) => s.length > 0)
+                    .map(([type, sections]) => (
+                        <div 
+                            key={type}
+                            className={`mb-4 w-full bg-componentbgc rounded-lg border ${BORDER_STYLES[type as SectionType]} p-6 transition-transform duration-300 ease-out hover:shadow-lg hover:-translate-y-0.5`}
+                        >
+                            <h2 className="text-xl sm:text-2xl font-bold text-textc mb-4">
+                                {SECTION_TYPE_NAMES[type as SectionType]}
+                            </h2>
+                            <div className="space-y-4">
+                                {sections.map(section => (
+                                    <ProfileSectionComponent 
+                                        key={section.id} 
+                                        section={section} 
+                                        onToggleVisibility={handleToggleVisibility} 
+                                        onDelete={handleDeleteSection} 
+                                    />
+                                ))}
                             </div>
-                        );
-                    });
-                })()}
+                        </div>
+                    ))}
             </Masonry>
 
             {sections.length === 0 && (
@@ -358,4 +234,6 @@ export default function ProfilePage(): JSX.Element {
             )}
         </div>
     );
-}
+};
+
+export default ProfilePage;

@@ -1,6 +1,7 @@
-import { ProfileSection as ProfileSectionType } from '../types/profile';
+import { memo, useMemo } from 'react';
 import { Switch } from './Switch';
 import { Trash2 } from 'lucide-react';
+import { ProfileSection as ProfileSectionType } from '@/types/profile';
 
 interface ProfileSectionProps {
     section: ProfileSectionType;
@@ -8,19 +9,30 @@ interface ProfileSectionProps {
     onDelete: (id: number) => void;
 }
 
+// Memoize date formatting function
 const formatDate = (dateString: string | null): string => {
     if (!dateString) return '';
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    
+    // Use simple string manipulation instead of Date object for ISO formats
+    try {
+        const [year, month, day] = dateString.split('T')[0].split('-');
+        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                          'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return `${monthNames[parseInt(month)-1]} ${parseInt(day)}, ${year}`;
+    } catch {
+        return '';
+    }
 };
 
-export default function ProfileSection({ section, onToggleVisibility, onDelete }: ProfileSectionProps) {
+const ProfileSectionComponent = ({ section, onToggleVisibility, onDelete }: ProfileSectionProps) => {
+    // Memoize formatted dates
+    const [startDate, endDate] = useMemo(() => [
+        formatDate(section.start_date),
+        section.end_date ? formatDate(section.end_date) : 'Present'
+    ], [section.start_date, section.end_date]);
+
     return (
-        <div className="p-4 border border-textc/20 rounded-lg bg-componentbgc/50 shadow-sm hover:bg-componentbgc/70 transition-colors duration-200">
+        <div className="p-6 border border-textc/20 rounded-lg bg-componentbgc/50 shadow-sm hover:bg-componentbgc/70 transition-colors duration-200">
             <div className="flex justify-between items-center mb-2">
                 <h3 className="text-lg font-semibold text-textc">
                     {section.institution || 'Untitled'}
@@ -54,9 +66,11 @@ export default function ProfileSection({ section, onToggleVisibility, onDelete }
             
             {(section.start_date || section.end_date) && (
                 <p className="text-sm text-textc/60 mt-2">
-                    {formatDate(section.start_date)} - {section.end_date ? formatDate(section.end_date) : 'Present'}
+                    {startDate} - {endDate}
                 </p>
             )}
         </div>
     );
-} 
+};
+
+export default memo(ProfileSectionComponent);

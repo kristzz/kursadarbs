@@ -1,92 +1,89 @@
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
 
-// Helper function to get cookie value
+// Initialize axios instance
+export const api = axios.create({
+    baseURL: API_URL,
+    withCredentials: true,
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+    }
+});
+
+// Request interceptor
+api.interceptors.request.use(config => {
+  const token = Cookies.get('auth_token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  
+  const csrfToken = getCookie('XSRF-TOKEN');
+  if (csrfToken) {
+    config.headers['X-XSRF-TOKEN'] = csrfToken;
+  }
+  
+  return config;
+});
+
 function getCookie(name: string): string {
-    if (typeof document === 'undefined') return '';
-    
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) {
-        return decodeURIComponent(parts.pop()?.split(';').shift() || '');
-    }
-    return '';
+  if (typeof document === 'undefined') return '';
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return decodeURIComponent(parts.pop()?.split(';').shift() || '');
+  return '';
 }
 
-// Initialize axios defaults only on client side
-if (typeof window !== 'undefined') {
-    axios.defaults.withCredentials = true;
-    axios.defaults.headers.common['X-XSRF-TOKEN'] = getCookie('XSRF-TOKEN');
-}
-
-export interface RegisterData {
-    name: string;
-    email: string;
-    password: string;
-    country: string;
-    profession: string;
-    purpose: 'findWork' | 'provideWork';
-    source: string;
-}
-
-// Function to get CSRF cookie
 export const getCsrfToken = async () => {
-    await axios.get(`${API_URL}/sanctum/csrf-cookie`, { withCredentials: true });
-};
-
-export const register = async (data: RegisterData) => {
-    try {
-        await getCsrfToken();
-        
-        const response = await axios.post(
-            `${API_URL}/auth/register`,  // This matches the route
-            data,
-            { withCredentials: true }
-        );
-
-        if (response.data.token) {
-            localStorage.setItem('auth_token', response.data.token);
-            axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
-        }
-
-        return response.data;
-    } catch (error: any) {
-        if (error.response) {
-            throw new Error(error.response.data.message || 'Registration failed');
-        }
-        throw new Error('Network error');
-    }
+  await axios.get(`${API_URL}/sanctum/csrf-cookie`, { withCredentials: true });
 };
 
 export const login = async (email: string, password: string) => {
-    try {
-        // Get CSRF token before making the login request
-        await getCsrfToken();
-
-        const response = await axios.post(`${API_URL}/login`, { email, password }, {
-            withCredentials: true,
-        });
-
-        if (response.data.token) {
-            localStorage.setItem('auth_token', response.data.token);
-            axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
-        }
-
-        return response.data;
-    } catch (error: any) {
-        if (error.response) {
-            throw new Error(error.response.data.message || 'Login failed');
-        }
-        throw new Error('Network error');
+  try {
+    await getCsrfToken();
+    const response = await api.post('/login', { email, password });
+    
+    if (response.data.token) {
+      Cookies.set('auth_token', response.data.token, {
+        expires: 30,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'Strict'
+      });
     }
+    
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.response?.data?.message || 'Login failed');
+  }
+};
+
+export const register = async (data: any) => {
+  try {
+    await getCsrfToken();
+    const response = await api.post('/auth/register', data);
+    
+    if (response.data.token) {
+      Cookies.set('auth_token', response.data.token, {
+        expires: 30,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'Strict'
+      });
+    }
+    
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error.response?.data?.message || 'Registration failed');
+  }
 };
 
 export const logout = async () => {
-    try {
-        const response = await axios.post(`${API_URL}/logout`);
-        return response.data;
-    } catch (error: any) {
-        throw new Error('Logout failed');
-    }
-}; 
+  try {
+    await api.post('/logout');
+    Cookies.remove('auth_token');
+    return true;
+  } catch (error) {
+    throw new Error('Logout failed');
+  }
+};

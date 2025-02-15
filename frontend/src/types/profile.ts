@@ -1,26 +1,27 @@
 export enum SectionType {
-    EDUCATION = 'education',
-    WORK_EXPERIENCE = 'work_experience',
-    CERTIFICATION = 'certification',
-    PROJECT = 'project',
-    SKILL = 'skill',
-    AWARD = 'award',
-    LANGUAGE = 'language'
-}
-
-
-export interface ProfileSection {
+    WORK_EXPERIENCE = "WORK_EXPERIENCE",
+    EDUCATION = "EDUCATION",
+    PROJECT = "PROJECT",
+    SKILL = "SKILL",
+    AWARD = "AWARD",
+    LANGUAGE = "LANGUAGE",
+    CERTIFICATION = "CERTIFICATION"
+  }
+  
+  export interface ProfileSection {
     id: number;
     section_type: SectionType;
-    description: string | null;
+    description: string;
+    institution: string;
     start_date: string | null;
     end_date: string | null;
-    institution: string | null;
     is_public: boolean;
-}
-
-export interface UserProfile {
+  }
+  
+  export interface UserProfile {
+    id: number;
     name: string;
-    profession: string;
-    country: string;
-} 
+    email: string;
+    profession?: string;
+    country?: string;
+  }
