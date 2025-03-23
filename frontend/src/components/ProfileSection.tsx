@@ -10,7 +10,7 @@ interface ProfileSectionProps {
 }
 
 // Memoize date formatting function
-const formatDate = (dateString: string | null): string => {
+const formatDate = (dateString: string | undefined): string => {
     if (!dateString) return '';
     
     // Use simple string manipulation instead of Date object for ISO formats

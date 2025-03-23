@@ -15,11 +15,6 @@ export const api = axios.create({
 
 // Request interceptor
 api.interceptors.request.use(config => {
-  const token = Cookies.get('auth_token');
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  
   const csrfToken = getCookie('XSRF-TOKEN');
   if (csrfToken) {
     config.headers['X-XSRF-TOKEN'] = csrfToken;
@@ -37,7 +32,11 @@ function getCookie(name: string): string {
 }
 
 export const getCsrfToken = async () => {
-  await axios.get(`${API_URL}/sanctum/csrf-cookie`, { withCredentials: true });
+  await api.get(`/sanctum/csrf-cookie`);
+  const token = getCookie('XSRF-TOKEN');
+  if (!token) {
+    throw new Error('CSRF token not set after request');
+  }
 };
 
 export const login = async (email: string, password: string) => {
@@ -63,15 +62,7 @@ export const register = async (data: any) => {
   try {
     await getCsrfToken();
     const response = await api.post('/auth/register', data);
-    
-    if (response.data.token) {
-      Cookies.set('auth_token', response.data.token, {
-        expires: 30,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: 'Strict'
-      });
-    }
-    
+
     return response.data;
   } catch (error: any) {
     throw new Error(error.response?.data?.message || 'Registration failed');

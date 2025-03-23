@@ -54,15 +54,16 @@ class AuthController extends Controller
                 'status' => true,
                 'message' => 'User Created Successfully',
                 'user' => $user,
-                'token' => $token
             ], 200)->cookie(
                 'auth_token',
                 $token,
                 60 * 24 * 30, // 30 days
                 '/',
-                null,
-                true,     // secure
-                true      // httpOnly
+                'localhost', // Use 'localhost' instead of null
+                false,       // Set to false for local development
+                false,       // Set httpOnly to false temporarily for debugging
+                false,       // raw
+                'Lax'        // sameSite policy
             );
 
         } catch (\Throwable $th) {
@@ -170,6 +171,7 @@ class AuthController extends Controller
                 'name' => $user->name,
                 'profession' => $user->profession,
                 'country' => $user->country,
+                'role' => $user->role,
             ]
         ]);
     }
