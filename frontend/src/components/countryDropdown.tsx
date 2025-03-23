@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect, useRef } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BiChevronDown } from 'react-icons/bi';
@@ -5,10 +7,10 @@ import { useTranslations } from 'next-intl';
 
 interface CountryDropdownProps {
   selected: string;
-  setSelected: (value: string) => void;
+  setSelected: (country: string) => void;
 }
 
-const CountryDropdown = ({ selected, setSelected }: CountryDropdownProps) => {
+const CountryDropdown = ({ selected = '', setSelected }: CountryDropdownProps) => {
   const t = useTranslations('Register'); 
   const [countries, setCountries] = useState<any[]>([]);
   const [inputValue, setInputValue] = useState('');
@@ -52,7 +54,7 @@ const CountryDropdown = ({ selected, setSelected }: CountryDropdownProps) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-2 py-1 border-b border-white text-inherit text-left flex justify-between items-center"
       >
-        {selected.length > 25 ? `${selected.substring(0, 25)}...` : selected || t('selectCountry')}
+        {selected && selected.length > 25 ? `${selected.substring(0, 25)}...` : selected || t('selectCountry')}
         <BiChevronDown size={20} className={`${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
@@ -77,7 +79,7 @@ const CountryDropdown = ({ selected, setSelected }: CountryDropdownProps) => {
               <li
                 key={country}
                 className={`p-2 text-sm hover:bg-primaryc text-white text-left cursor-pointer ${
-                  country.toLowerCase() === selected.toLowerCase() && 'bg-primaryc'
+                  selected && country.toLowerCase() === selected.toLowerCase() && 'bg-primaryc'
                 }`}
                 onClick={() => {
                   setSelected(country);

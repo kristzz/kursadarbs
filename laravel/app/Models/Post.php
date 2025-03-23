@@ -41,4 +41,12 @@ class Post extends Model
     {
         return $this->belongsTo(Business::class);
     }
+
+    /**
+     * Get the applications for this job post.
+     */
+    public function applications()
+    {
+        return $this->hasMany(JobApplication::class, 'post_id');
+    }
 }
