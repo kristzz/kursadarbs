@@ -8,6 +8,7 @@ import { Trash2, Edit, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import EditPostForm from '@/components/EditPostForm'
+import StartConversationButton from './messages/StartConversationButton'
 
 interface BusinessProfileData {
     id: number
@@ -58,6 +59,8 @@ export default function BusinessProfile({ userId }: BusinessProfileProps) {
     const [needsBusinessProfile, setNeedsBusinessProfile] = useState(false)
     const [saving, setSaving] = useState(false)
     const [editingPostId, setEditingPostId] = useState<number | null>(null)
+    const [userRole, setUserRole] = useState<string | null>(null)
+    const [currentUserId, setCurrentUserId] = useState<number | null>(null)
 
     const fetchProfile = useCallback(async () => {
         try {
@@ -96,6 +99,16 @@ export default function BusinessProfile({ userId }: BusinessProfileProps) {
                     setNeedsBusinessProfile(true)
                     setIsEditing(true) // Automatically open the edit form
                 }
+            }
+
+            // Fetch user role
+            const userRoleResponse = await api.get('/user/profile')
+            if (userRoleResponse.data && userRoleResponse.data.user) {
+                setUserRole(userRoleResponse.data.user.role)
+                setCurrentUserId(userRoleResponse.data.user.id || null)
+            } else {
+                setUserRole(null)
+                setCurrentUserId(null)
             }
         } catch (err: any) {
             console.error('Error fetching business profile:', err)
@@ -380,13 +393,25 @@ export default function BusinessProfile({ userId }: BusinessProfileProps) {
                             </div>
                         </div>
                         
-                        <button
-                            onClick={() => setIsEditing(true)}
-                            className="text-primaryc hover:text-primaryc/80 p-2 rounded-full hover:bg-primaryc/10 transition-colors"
-                            title={t('editBusinessProfile')}
-                        >
-                            <Edit className="w-5 h-5" />
-                        </button>
+                        <div className="flex flex-col md:flex-row gap-3">
+                            <button
+                                onClick={() => setIsEditing(true)}
+                                className="text-primaryc hover:text-primaryc/80 p-2 rounded-full hover:bg-primaryc/10 transition-colors"
+                                title={t('editBusinessProfile')}
+                            >
+                                <Edit className="w-5 h-5" />
+                            </button>
+                            
+                            {/* Add message button for non-owners */}
+                            {userRole !== "EMPLOYER" && currentUserId !== profile.id && (
+                                <StartConversationButton 
+                                    recipientId={profile.id}
+                                    recipientType="business"
+                                    buttonText={t('contactBusiness')}
+                                    redirectToMessages={true}
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
             ) : needsBusinessProfile ? (

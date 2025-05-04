@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Firebase\JWT\JWT;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
@@ -173,6 +175,41 @@ class AuthController extends Controller
                 'country' => $user->country,
                 'role' => $user->role,
             ]
+        ]);
+    }
+
+    /**
+     * Generate a token for WebSocket authentication
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function generateWebSocketToken()
+    {
+        $user = Auth::user();
+
+        if (!$user) {
+            return response()->json([
+                'status' => false,
+                'message' => 'User not authenticated'
+            ], 401);
+        }
+
+        // Generate a simple JWT token with user information
+        $payload = [
+            'sub' => $user->id,
+            'name' => $user->name,
+            'email' => $user->email,
+            'role' => $user->role,
+            'type' => 'websocket',
+            'exp' => time() + (60 * 60 * 24) // 24 hours expiry
+        ];
+
+        // Use the JWT_SECRET from the websocket server
+        $token = JWTAuth::customClaims($payload)->fromUser($user);
+
+        return response()->json([
+            'status' => true,
+            'token' => $token
         ]);
     }
 }

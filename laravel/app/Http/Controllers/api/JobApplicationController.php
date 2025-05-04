@@ -5,6 +5,8 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Models\JobApplication;
 use App\Models\Post;
+use App\Models\User;
+use App\Models\Conversation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -127,5 +129,102 @@ class JobApplicationController extends Controller
             'post' => $post,
             'applications' => $applications,
         ]);
+    }
+
+    /**
+     * Get or create a conversation for a job application
+     *
+     * @param  int  $jobId
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getConversation($jobId)
+    {
+        try {
+            $user = Auth::user();
+            $applicantId = request('applicant_id');
+
+            if (!$applicantId && $user->role !== 'EMPLOYER') {
+                // If user is an applicant, use their ID
+                $applicantId = $user->id;
+            }
+
+            if (!$applicantId) {
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Applicant ID is required'
+                ], 400);
+            }
+
+            // Check if job exists
+            $job = Post::findOrFail($jobId);
+
+            // Check if user has permission to access this conversation
+            if ($user->role === 'EMPLOYER') {
+                // Business users can only access their own job postings
+                if ($job->user_id !== $user->id) {
+                    return response()->json([
+                        'status' => false,
+                        'message' => 'Unauthorized access to this job application'
+                    ], 403);
+                }
+            } else {
+                // Applicants can only access their own conversations
+                if ($applicantId !== $user->id) {
+                    return response()->json([
+                        'status' => false,
+                        'message' => 'Unauthorized access to this conversation'
+                    ], 403);
+                }
+            }
+
+            // Find the business user
+            $businessUser = User::findOrFail($job->user_id);
+
+            // Check if a conversation already exists between these users
+            $conversation = $this->findConversationBetweenUsers($businessUser->id, $applicantId);
+
+            // Format messages if conversation exists
+            $messages = [];
+            if ($conversation) {
+                $messages = $conversation->messages()
+                    ->orderBy('created_at', 'asc')
+                    ->get()
+                    ->map(function ($message) use ($user, $businessUser) {
+                        return [
+                            'content' => $message->content,
+                            'sender' => $message->user_id === $businessUser->id ? 'business' : 'applicant',
+                            'timestamp' => $message->created_at->toIso8601String()
+                        ];
+                    });
+            }
+
+            return response()->json([
+                'status' => true,
+                'conversation' => $conversation,
+                'messages' => $messages
+            ]);
+
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Failed to get conversation: ' . $e->getMessage()
+            ], 500);
+        }
+    }
+
+    /**
+     * Find a conversation between two users
+     *
+     * @param  int  $userId1
+     * @param  int  $userId2
+     * @return \App\Models\Conversation|null
+     */
+    private function findConversationBetweenUsers($userId1, $userId2)
+    {
+        return Conversation::whereHas('users', function ($query) use ($userId1) {
+            $query->where('users.id', $userId1);
+        })->whereHas('users', function ($query) use ($userId2) {
+            $query->where('users.id', $userId2);
+        })->first();
     }
 }

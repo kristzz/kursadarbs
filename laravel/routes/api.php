@@ -9,6 +9,7 @@ use App\Http\Controllers\api\BusinessProfileController;
 use App\Http\Controllers\api\JobApplicationController;
 use App\Http\Controllers\api\UserController;
 use App\Http\Controllers\api\BusinessController;
+use App\Http\Controllers\api\MessageController;
 
 use Laravel\Sanctum\Http\Controllers\CsrfCookieController;
 
@@ -46,4 +47,18 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/apply', [JobApplicationController::class, 'apply']);
     Route::get('/applications', [JobApplicationController::class, 'getUserApplications']);
     Route::get('/job-applications/{postId}', [JobApplicationController::class, 'getJobApplications']);
+
+    // Chat routes
+    Route::get('/conversations', [MessageController::class, 'getConversations']);
+    Route::post('/conversations', [MessageController::class, 'createConversation']);
+    Route::get('/conversations/{conversationId}/messages', [MessageController::class, 'getMessages']);
+    Route::post('/conversations/{conversationId}/messages', [MessageController::class, 'sendMessage']);
+
+    // WebSocket Authentication - moved inside the sanctum group
+    Route::get('/ws-token', [AuthController::class, 'generateWebSocketToken']);
 });
+
+Route::get('/users/{id}', [UserController::class, 'show']);
+
+// Job application conversations - using sanctum instead of jwt
+Route::middleware('auth:sanctum')->get('/job-application/{jobId}/conversation', [JobApplicationController::class, 'getConversation']);

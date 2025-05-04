@@ -146,7 +146,8 @@
     "description": "Description",
     "cancel": "Cancel",
     "save": "Save Changes",
-    "create": "Create Profile"
+    "create": "Create Profile",
+    "contactBusiness": "Contact Business"
   },
   "EditPost": {
     "editJob": "Edit Job Posting",
@@ -164,5 +165,46 @@
     "jobUpdated": "Job posting updated successfully!",
     "close": "Close",
     "edit": "Edit"
+  },
+  "Messages": {
+    "title": "Messages",
+    "goBack": "Go Back",
+    "conversations": "Conversations",
+    "noConversations": "No conversations yet",
+    "noMessages": "No messages yet",
+    "you": "You",
+    "selectConversation": "Select a conversation",
+    "startConversation": "Start the conversation by sending a message",
+    "typeMessage": "Type your message...",
+    "noConversationSelected": "No conversation selected",
+    "websocketError": "WebSocket connection error",
+    "authRequired": "Authentication Required",
+    "pleaseLogin": "Please log in to access messages",
+    "messages": "Messages",
+    "errorTitle": "Error",
+    "connectedToRealtime": "Connected to real-time messaging",
+    "reconnecting": "Reconnecting to server...",
+    "disconnected": "Disconnected from server"
+  },
+  "UserProfile": {
+    "errorTitle": "Error Loading Profile",
+    "notFoundTitle": "User Not Found",
+    "userNotFound": "The user profile you're looking for doesn't exist or is not available.",
+    "goBack": "Go Back",
+    "memberSince": "Member since",
+    "about": "About",
+    "skills": "Skills",
+    "skillsAndTech": "Skills & Technologies",
+    "experience": "Experience",
+    "education": "Education",
+    "awards": "Awards",
+    "languages": "Languages",
+    "contact": "Contact",
+    "noBio": "No bio provided.",
+    "noProfession": "Profession not specified",
+    "noLocation": "Location not specified",
+    "sendMessage": "Send Message",
+    "startingChat": "Starting chat...",
+    "contactApplicant": "Contact Applicant"
   }
 }

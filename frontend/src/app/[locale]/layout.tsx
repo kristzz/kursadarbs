@@ -9,6 +9,7 @@ import type React from "react"
 
 import Navbar from "../../components/navbar"
 import { Spinner } from "../../components/spinner"
+import { Providers } from "./providers"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -40,10 +41,12 @@ export default async function RootLayout({
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <Navbar locale={locale} />
-          <Suspense fallback={<Spinner />}>
-            <div className="pt-24">{children}</div>
-          </Suspense>
+          <Providers>
+            <Navbar locale={locale} />
+            <Suspense fallback={<Spinner fullscreen={true} />}>
+              <div className="pt-24">{children}</div>
+            </Suspense>
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

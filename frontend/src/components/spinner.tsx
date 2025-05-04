@@ -1,4 +1,22 @@
-export function Spinner() {
+import React from 'react';
+
+interface SpinnerProps {
+  size?: 'sm' | 'md' | 'lg';
+  fullscreen?: boolean;
+}
+
+export const Spinner: React.FC<SpinnerProps> = ({ size = 'md', fullscreen = false }) => {
+  const sizeClasses = {
+    sm: 'h-4 w-4',
+    md: 'h-8 w-8',
+    lg: 'h-12 w-12'
+  };
+
+  const spinner = (
+    <div className={`animate-spin rounded-full border-2 border-t-transparent border-primaryc ${sizeClasses[size]}`}></div>
+  );
+
+  if (fullscreen) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-backgroundc/80 backdrop-blur-sm z-50">
         <div className="relative w-16 h-16">
@@ -30,7 +48,10 @@ export function Spinner() {
           </svg>
         </div>
       </div>
-    )
+    );
   }
+
+  return spinner;
+};
   
   
