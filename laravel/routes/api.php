@@ -53,10 +53,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/conversations', [MessageController::class, 'createConversation']);
     Route::get('/conversations/{conversationId}/messages', [MessageController::class, 'getMessages']);
     Route::post('/conversations/{conversationId}/messages', [MessageController::class, 'sendMessage']);
-
-    // WebSocket Authentication - moved inside the sanctum group
-    Route::get('/ws-token', [AuthController::class, 'generateWebSocketToken']);
 });
+
+// WebSocket Authentication - no middleware, handle auth manually in controller
+Route::get('/ws-token', [AuthController::class, 'generateWebSocketToken']);
 
 Route::get('/users/{id}', [UserController::class, 'show']);
 

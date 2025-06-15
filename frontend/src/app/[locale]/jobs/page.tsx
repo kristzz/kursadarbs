@@ -96,7 +96,7 @@ export default function Jobs() {
     
     try {
       setApplyingToJobId(jobId);
-      const response = await api.post('/applications', { job_id: jobId });
+      const response = await api.post('/apply', { job_id: jobId });
       
       if (response.data.status) {
         alert(t('applicationSuccess'));

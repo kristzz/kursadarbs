@@ -287,14 +287,6 @@ export default function UserProfilePage() {
           <span>{profile?.email}</span>
         </div>
         
-        {/* Debugging information */}
-        <div className="p-2 mb-4 bg-gray-100 rounded-md text-xs">
-          <p>Session: {session ? 'Available' : 'Not available'}</p>
-          <p>User Role: {userRole || 'Not fetched'}</p>
-          <p>Session User ID: {session?.user ? (session.user as any).id : 'No user ID'}</p>
-          <p>Profile ID: {params.id}</p>
-        </div>
-        
         {/* Simple Contact Button - always shown for testing */}
         <button
           onClick={startConversation}

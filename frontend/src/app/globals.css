@@ -49,7 +49,7 @@ a {
   opacity: 80%;
 }
 
-a::before {
+a:not(.no-underline-effect)::before {
   content: "";
   background: linear-gradient(to right, var(--foreground) 45%, rgba(237, 237, 237, 0.3) 55%);
   background-size: 220% 100%;
@@ -63,11 +63,11 @@ a::before {
   transition: .3s ease-out;
 }
 
-a:hover::before {
+a:not(.no-underline-effect):hover::before {
   background-position: 0% 50%;
 }
 
-a:focus::before {
+a:not(.no-underline-effect):focus::before {
   background: linear-gradient(to right, var(--primaryc) 100%, rgba(137, 35, 158, 0.3) 55%);
   background-position: 0% 50%;
 }

@@ -9,7 +9,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Firebase\JWT\JWT;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
@@ -115,9 +114,11 @@ class AuthController extends Controller
                 $token,
                 60 * 24 * 30, // 30 days
                 '/',
-                null,
-                true,     // secure
-                true      // httpOnly
+                "localhost",  // domain
+                false,      // secure (false for local development)
+                false,      // httpOnly (false for debugging)
+                false,      // raw
+                "Lax"       // sameSite policy
             );
 
         } catch (\Throwable $th) {
@@ -183,9 +184,36 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function generateWebSocketToken()
+    public function generateWebSocketToken(Request $request)
     {
-        $user = Auth::user();
+        $user = null;
+
+        // Try to get user from auth_token cookie
+        if ($authToken = $request->cookie('auth_token')) {
+            try {
+                // First try as plain Sanctum token (format: ID|token)
+                if (strpos($authToken, '|') !== false) {
+                    $sanctumToken = \Laravel\Sanctum\PersonalAccessToken::findToken($authToken);
+                    if ($sanctumToken) {
+                        $user = $sanctumToken->tokenable;
+                    }
+                } else {
+                    // Try as encrypted cookie
+                    $token = decrypt($authToken);
+                    $sanctumToken = \Laravel\Sanctum\PersonalAccessToken::findToken($token);
+                    if ($sanctumToken) {
+                        $user = $sanctumToken->tokenable;
+                    }
+                }
+            } catch (\Exception $e) {
+                // Cookie processing failed, continue to fallback
+            }
+        }
+
+        // Fallback to regular Auth facade (for session authentication)
+        if (!$user) {
+            $user = Auth::user();
+        }
 
         if (!$user) {
             return response()->json([
@@ -194,22 +222,21 @@ class AuthController extends Controller
             ], 401);
         }
 
-        // Generate a simple JWT token with user information
-        $payload = [
-            'sub' => $user->id,
-            'name' => $user->name,
-            'email' => $user->email,
-            'role' => $user->role,
-            'type' => 'websocket',
-            'exp' => time() + (60 * 60 * 24) // 24 hours expiry
-        ];
+        // Create a simple JWT token manually instead of using JWTAuth::customClaims
+        try {
+            // Use JWTAuth but without custom claims to avoid Carbon issues
+            $token = JWTAuth::fromUser($user);
 
-        // Use the JWT_SECRET from the websocket server
-        $token = JWTAuth::customClaims($payload)->fromUser($user);
+            return response()->json([
+                'status' => true,
+                'token' => $token
+            ]);
 
-        return response()->json([
-            'status' => true,
-            'token' => $token
-        ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Failed to generate token: ' . $e->getMessage()
+            ], 500);
+        }
     }
 }

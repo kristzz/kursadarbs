@@ -1,0 +1,276 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.1.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.10.81:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'swcMinify'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 1524ms
+ ✓ Compiled /src/middleware in 221ms (128 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.4s (1043 modules)
+ ✓ Compiled in 356ms (449 modules)
+ GET /en 200 in 3280ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1033ms (1241 modules)
+ GET /api/auth/session 200 in 1674ms
+ ✓ Compiled /[locale]/auth/login in 330ms (1248 modules)
+ GET /en/auth/login 200 in 842ms
+ ○ Compiling /[locale]/profile ...
+ ✓ Compiled /[locale]/profile in 797ms (1106 modules)
+ GET /en/profile 200 in 1356ms
+ GET /en 200 in 219ms
+ ✓ Compiled /favicon.ico in 222ms (848 modules)
+ ✓ Compiled (861 modules)
+ GET /favicon.ico 200 in 641ms
+ GET /api/auth/session 200 in 798ms
+ GET /en/auth/login 200 in 66ms
+ GET /en/profile 200 in 25ms
+ ○ Compiling /[locale]/messages ...
+ ✓ Compiled /[locale]/messages in 730ms (1350 modules)
+ GET /en/messages 200 in 1274ms
+ GET /en 200 in 170ms
+ GET /favicon.ico 200 in 15ms
+ GET /api/auth/session 200 in 87ms
+ GET /en/auth/login 200 in 31ms
+ GET /en/profile 200 in 33ms
+ GET /favicon.ico 200 in 9ms
+ GET /en/messages 200 in 50ms
+ GET /en/messages 200 in 78ms
+ GET /favicon.ico 200 in 5ms
+ GET /api/auth/session 200 in 31ms
+ GET /en/messages 200 in 71ms
+ GET /favicon.ico 200 in 11ms
+ GET /api/auth/session 200 in 42ms
+ GET /en/messages 200 in 57ms
+ GET /en/messages 200 in 110ms
+ GET /en/messages 200 in 66ms
+ GET /favicon.ico 200 in 8ms
+ GET /api/auth/session 200 in 47ms
+ GET /en/messages 200 in 541ms
+ GET /api/auth/session 200 in 59ms
+ GET /favicon.ico 200 in 11ms
+ GET /en/messages 200 in 65ms
+ GET /en/messages 200 in 398ms
+ GET /favicon.ico 200 in 36ms
+ GET /api/auth/session 200 in 38ms
+ GET /en/auth/login 200 in 63ms
+ GET /en/messages 200 in 130ms
+ GET /en/auth/login 200 in 39ms
+ GET /favicon.ico 200 in 8ms
+ GET /api/auth/session 200 in 29ms
+ GET /en/profile 200 in 35ms
+ GET /favicon.ico 200 in 18ms
+ GET /en/messages 200 in 30ms
+ GET /en 200 in 64ms
+ GET /favicon.ico 200 in 11ms
+ GET /api/auth/session 200 in 39ms
+ GET /en/auth/login 200 in 31ms
+ GET /en/profile 200 in 30ms
+ GET /en/messages 200 in 28ms
+ GET /en/messages 200 in 56ms
+ GET /favicon.ico 200 in 10ms
+ GET /api/auth/session 200 in 29ms
+ GET /en/messages 200 in 44ms
+ GET /favicon.ico 200 in 8ms
+ GET /api/auth/session 200 in 36ms
+ GET /en/messages 200 in 51ms
+ GET /favicon.ico 200 in 6ms
+ GET /api/auth/session 200 in 36ms
+ GET /en/messages 200 in 50ms
+ GET /favicon.ico 200 in 8ms
+ GET /api/auth/session 200 in 32ms
+ GET /en/messages 200 in 81ms
+ GET /favicon.ico 200 in 13ms
+ GET /api/auth/session 200 in 43ms
+ GET /en/messages 200 in 58ms
+ GET /favicon.ico 200 in 7ms
+ GET /api/auth/session 200 in 34ms
+ GET /en/messages 200 in 44ms
+ GET /favicon.ico 200 in 7ms
+ GET /api/auth/session 200 in 31ms
+ GET /en/auth/login 200 in 63ms
+ GET /en/profile 200 in 22ms
+ GET /en/messages 200 in 24ms
+ GET /en/messages 200 in 61ms
+ GET /favicon.ico 200 in 12ms
+ GET /api/auth/session 200 in 32ms
+ GET /en/messages 200 in 54ms
+ GET /favicon.ico 200 in 7ms
+ GET /api/auth/session 200 in 34ms
+ GET /en/auth/login 200 in 146ms
+ GET /favicon.ico 200 in 6ms
+ GET /en/profile 200 in 24ms
+ GET /favicon.ico 200 in 6ms
+ GET /en/messages 200 in 26ms
+ GET /en 200 in 61ms
+ GET /api/auth/session 200 in 40ms
+ GET /en/auth/login 200 in 28ms
+ GET /en/profile 200 in 26ms
+ GET /en/profile 200 in 30ms
+ GET /en/profile 200 in 32ms
+ ○ Compiling /[locale]/jobs/[id] ...
+ ✓ Compiled /[locale]/jobs/[id] in 680ms (1132 modules)
+ GET /en/jobs/1 200 in 1302ms
+ ✓ Compiled /favicon.ico in 211ms (667 modules)
+ GET /favicon.ico 200 in 295ms
+ GET /favicon.ico 200 in 5ms
+ ○ Compiling /[locale]/employer/jobs/[id]/applications ...
+ ✓ Compiled /[locale]/employer/jobs/[id]/applications in 699ms (1154 modules)
+ GET /en/employer/jobs/2/applications 200 in 1217ms
+ GET /favicon.ico 200 in 14ms
+ ○ Compiling /[locale]/users/[id] ...
+ ✓ Compiled /[locale]/users/[id] in 770ms (1161 modules)
+ GET /en/users/1 200 in 1245ms
+ GET /favicon.ico 200 in 10ms
+ GET /favicon.ico 200 in 7ms
+ ○ Compiling /[locale]/jobs ...
+ ✓ Compiled /[locale]/jobs in 504ms (1153 modules)
+ GET /en/jobs 200 in 1049ms
+ GET /en/messages 200 in 166ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 592ms (872 modules)
+ GET /api/auth/session 200 in 722ms
+ GET /en/jobs 200 in 156ms
+ GET /favicon.ico 200 in 27ms
+ GET /api/auth/session 200 in 40ms
+ GET /en/jobs/1 200 in 49ms
+ GET /en/messages 200 in 36ms
+ ○ Compiling /[locale]/tasks ...
+ ✓ Compiled /[locale]/tasks in 1936ms (1388 modules)
+ GET /en/jobs 200 in 882ms
+ GET /en/tasks 200 in 2628ms
+ GET /en/tasks 200 in 40ms
+ GET /en/jobs 200 in 31ms
+ ✓ Compiled in 765ms (1402 modules)
+ GET /en/jobs 200 in 279ms
+ GET /en/profile 200 in 280ms
+ GET /en/employer/jobs/2/applications 200 in 283ms
+ GET /favicon.ico 200 in 20ms
+ GET /favicon.ico 200 in 6ms
+ GET /en/employer/jobs/2/applications 200 in 31ms
+ GET /favicon.ico 200 in 5ms
+ ⚠ Fast Refresh had to perform a full reload when bs/frontend/src/app/[locale]/jobs/[id]/page.tsx","ids":[]} changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 1282ms (1402 modules)
+ ✓ Compiled in 1ms (889 modules)
+ ✓ Compiled in 0ms (889 modules)
+ ✓ Compiled in 0ms (889 modules)
+ GET /en/jobs 200 in 1182ms
+ GET /en/users/4 200 in 1386ms
+ GET /en/jobs 200 in 2116ms
+ GET /en/employer/jobs/2/applications 200 in 1947ms
+ GET /en/profile 200 in 1797ms
+ GET /favicon.ico 200 in 20ms
+ GET /favicon.ico 200 in 26ms
+ GET /api/auth/session 200 in 122ms
+ GET /api/auth/session 200 in 13ms
+ GET /en/users/4 200 in 40ms
+ GET /favicon.ico 200 in 6ms
+ GET /en/messages?conversationId=2 200 in 42ms
+ GET /favicon.ico 200 in 5ms
+ GET /en/messages 200 in 55ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 1078ms (668 modules)
+ GET /en 200 in 1349ms
+ ✓ Compiled /api/auth/[...nextauth] in 225ms (880 modules)
+ GET /api/auth/session 200 in 363ms
+ GET /api/auth/session 200 in 4ms
+ ○ Compiling /[locale]/video-call ...
+ ✓ Compiled /[locale]/video-call in 961ms (1400 modules)
+ GET /en/video-call 200 in 1638ms
+ GET /api/auth/session 200 in 81ms
+ GET /api/auth/session 200 in 6ms
+ GET /en/messages 200 in 47ms
+ GET /en/video-call 200 in 70ms
+ GET /api/auth/session 200 in 47ms
+ GET /api/auth/session 200 in 9ms
+ GET /en 200 in 106ms
+ GET /api/auth/session 200 in 43ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/auth/session 200 in 13ms
+ GET /en/messages 200 in 38ms
+ GET /en/profile 200 in 46ms
+ GET /en 200 in 76ms
+ GET /api/auth/session 200 in 58ms
+ GET /api/auth/session 200 in 11ms
+ GET /api/auth/session 200 in 12ms
+ ✓ Compiled /[locale]/auth/login in 480ms (887 modules)
+ GET /en/auth/login 200 in 605ms
+ ○ Compiling /[locale]/auth/register ...
+ ✓ Compiled /[locale]/auth/register in 1126ms (1404 modules)
+ GET /en/auth/register 200 in 1690ms
+ GET /en/profile 200 in 42ms
+ ✓ Compiled /[locale]/jobs in 435ms (664 modules)
+ GET /en/jobs 200 in 599ms
+ ✓ Compiled /[locale]/jobs/[id] in 405ms (655 modules)
+ GET /en/jobs/1 200 in 519ms
+ GET /en/jobs 200 in 31ms
+ GET /en/profile 200 in 30ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 708ms (665 modules)
+ GET /favicon.ico 200 in 783ms
+ ✓ Compiled /[locale]/employer/jobs/[id]/applications in 418ms (670 modules)
+ GET /en/employer/jobs/1/applications 200 in 534ms
+ GET /favicon.ico 200 in 15ms
+ ○ Compiling /[locale]/users/[id] ...
+ ✓ Compiled /[locale]/users/[id] in 751ms (675 modules)
+ GET /en/users/4 200 in 874ms
+ GET /favicon.ico 200 in 15ms
+ GET /en/messages 200 in 38ms
+ GET /favicon.ico 200 in 6ms
+ GET /en/messages 200 in 44ms
+ GET /en/messages 200 in 43ms
+ ○ Compiling /[locale]/tasks ...
+ ✓ Compiled /[locale]/tasks in 863ms (636 modules)
+ GET /en/tasks 200 in 1026ms
+ ✓ Compiled /[locale] in 216ms (644 modules)
+ GET /en 200 in 437ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 645ms (856 modules)
+ GET /api/auth/session 200 in 809ms
+ GET /api/auth/session 200 in 8ms
+ GET /api/auth/session 200 in 5ms
+ GET /lv 200 in 69ms
+ GET /api/auth/session 200 in 46ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/session 200 in 6ms
+ ✓ Compiled /[locale]/profile in 223ms (887 modules)
+ GET /lv/profile 200 in 353ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 607ms (1403 modules)
+ GET /lv/settings 404 in 721ms
+ ○ Compiling /[locale]/profile/settings ...
+ ✓ Compiled /[locale]/profile/settings in 854ms (1421 modules)
+Error: MISSING_MESSAGE: Could not resolve `Settings` in messages for locale `lv`.
+    at SettingsPage (src/app/[locale]/profile/settings/page.tsx:34:28)
+  32 |
+  33 | export default function SettingsPage() {
+> 34 |   const t = useTranslations('Settings');
+     |                            ^
+  35 |   
+  36 |   // Profile Settings
+  37 |   const [profileData, setProfileData] = useState({ {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `Settings` in messages for locale `lv`.'
+}
+ GET /lv/profile/settings 200 in 1826ms
+ GET /api/auth/session 200 in 124ms
+ GET /api/auth/session 200 in 12ms
+ GET /api/auth/session 200 in 44ms
+ ✓ Compiled /[locale]/jobs in 453ms (676 modules)
+ GET /lv/jobs 200 in 607ms
+ GET /en/jobs 200 in 36ms
+ ✓ Compiled /api/auth/[...nextauth] in 270ms (873 modules)
+ GET /api/auth/session 200 in 421ms
+ GET /api/auth/session 200 in 4ms
+ GET /api/auth/session 200 in 4ms
+ GET /api/auth/session 200 in 6ms
+[?25h

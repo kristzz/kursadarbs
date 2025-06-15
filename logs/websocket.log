@@ -1,0 +1,4388 @@
+
+> websocket-server@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[WebSocket] Server is running on port 6001 in development mode
+[WebSocket] Authentication enabled
+[WebSocket] Allowed origins: http://localhost:3000, http://127.0.0.1:3000
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6IkRMUEtzTUgxaWoycHpOaEZTeENVRUE9PSIsInZhbHVlIjoiZHF1K1ZtQS9CMkZ3UEE4LzI5UmFUOUtJd3RHd3V3R3dJMzVZQjdBWGJkRGhMNGNNUUdJN1ZaK1RwWFlUd0w5QUxiUTc5UGY0TkxHTnNUUURIQTRzUDZqcG1pNThnTjIzNjNnU1dpQ2l4ajRtSzdlYTE0ZW1uQ1B5eVJGQ1VTQzEiLCJtYWMiOiJlMTFkYzVhNTU3MDAwZmI4ZjAzZTU0YjU2OWQ5OWZmZGYxODMyNGVlZGZkZDQwZmEyY2JhMzI5YWM0Yzk0NmRmIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJpdiI6Im5NQlkwb3Nla1FKcWkyK0xJN05IOWc9PSIsInZhbHVlIjoidkVFc2ZKZDVONjBKcW4yQWVBYVJ2MURHc2pwUm1jVFRiRUFMelRoT2I3RHpTUWJsVVJkd1FKV25RckhOcENISWlhYThJZnF4Uk80Y0lJdjlvWitGakV1clBiRE9yczZPQnUzUjRPc2pPcDN3VEJJNkZvMEpjbXJFaURqTzhBejIiLCJtYWMiOiI4ZDU3YjJmNzE1M2IwOWU4NDA1NGJkMDczZTU5YTFmNjQ2NjU0OTgyOWJjZTMyNTFmOTIyOGY0YmYyNmQxODZlIiwidGFnIjoiIn0%253D',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMyODMwLCJleHAiOjE3NDkyMTkyMzAsIm5iZiI6MTc0OTEzMjgzMCwianRpIjoicmNUR05HR0phZVR3a1NTTyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.KYeD_sVW3KQ88WHj_o9n9RVqVeVKnWhKUv9vwYAZ52M',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMyODMxLCJleHAiOjE3NDkyMTkyMzEsIm5iZiI6MTc0OTEzMjgzMSwianRpIjoiZ211U2hrOVpYdk9tSUlUbyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.7UeUR_lVQvS84l773giJ94RNA3-sroSHtS__VcEYA80',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: global
+[WebSocket] Ping status: 1 active, 0 terminated, 1 total connections
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMyODM1LCJleHAiOjE3NDkyMTkyMzUsIm5iZiI6MTc0OTEzMjgzNSwianRpIjoiUzdYR1lqdzFsYmFUSUtPQyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.-DlLueG7MjvVmZxvEPiTbXCXB_CWJbg-_j3PssdH7RE',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Ping status: 1 active, 0 terminated, 1 total connections
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMyOTg4LCJleHAiOjE3NDkyMTkzODgsIm5iZiI6MTc0OTEzMjk4OCwianRpIjoiWFYyMlNHbUs0eXVCaW9uUSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.uNVOK4xDDhxbqjNrmNhmvy4dLWMXxAQJbnNH2GrsoEk',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMyOTg4LCJleHAiOjE3NDkyMTkzODgsIm5iZiI6MTc0OTEzMjk4OCwianRpIjoiMkdGOWVPNlgwOE1WSnA4VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.nKgo2ma0ZYeS-zRtHvDRE44T8H078xXxJa4-kkp50V8',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMyOTg4LCJleHAiOjE3NDkyMTkzODgsIm5iZiI6MTc0OTEzMjk4OCwianRpIjoiNEdEdnlZRlVzQnFoNnZ4OCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.4bh6n8xdHxy1RpX3Ft3DaxuoN_YRQtmXe4cJFcAU8x0',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Ping status: 1 active, 0 terminated, 1 total connections
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDE3LCJleHAiOjE3NDkyMTk0MTcsIm5iZiI6MTc0OTEzMzAxNywianRpIjoieXgxTjRNQThiemhRYlA0bCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.kD92M198lX5LQ1QtfJ0Xxqd-xPbhDNpQFAgEPOPn9Ho',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDE3LCJleHAiOjE3NDkyMTk0MTcsIm5iZiI6MTc0OTEzMzAxNywianRpIjoiQTBRaGFRWmVHMVVSeFlXRyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.9U3k-ED4RiYxQDd5LzOJ5Bn3p_q0g1cMw9GzUm6huYY',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDE3LCJleHAiOjE3NDkyMTk0MTcsIm5iZiI6MTc0OTEzMzAxNywianRpIjoiZ0Q5cGgwbGhHSjB0RDNrbCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.orSnSiyyvMpjZNLmXEOWgid188jlrrdgfbMM_MHJ4uk',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDE3LCJleHAiOjE3NDkyMTk0MTcsIm5iZiI6MTc0OTEzMzAxNywianRpIjoiOGNpVkFMVGZOQ05xOEc3eSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.5zQ2ZmDBlgdRkghSiexSdCwbCNJIv3jjYTzLRCxLnnA',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 38,
+      content: 'bop',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-05 14:17:24',
+      time: '02:17 PM'
+    },
+    content: 'bop',
+    sender_id: 1749133017695,
+    user_id: 1749133017695,
+    user_name: 'admin2@admin.lv',
+    timestamp: '2025-06-05T14:17:24.140Z',
+    _sender: {
+      id: 1749133017695,
+      timestamp: '2025-06-05T14:17:24.141Z',
+      clientId: 'client-yxo4076x-1749133042992'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDQ0LCJleHAiOjE3NDkyMTk0NDQsIm5iZiI6MTc0OTEzMzA0NCwianRpIjoiTDl1RHNhc3BKZ0Y1V0N1dyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.FkneduNyv6X9I3TWac6R9TsURbis15k1cvTwXORk9D0',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDQ0LCJleHAiOjE3NDkyMTk0NDQsIm5iZiI6MTc0OTEzMzA0NCwianRpIjoidVpZUGR3V2l1OXhtYmVoUiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.i3-vC9QrVVivB3JvMTXIwID1CU1nxVxCGanZYDstFrM',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMDU3LCJleHAiOjE3NDkyMTk0NTcsIm5iZiI6MTc0OTEzMzA1NywianRpIjoiQmN6ZFRsaVV0bmJZajh6NyIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.3w8uOocFi2uxl5Bt8TBSXs9Vi3ecUp185Twl5TEszYQ',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMjgzLCJleHAiOjE3NDkyMTk2ODMsIm5iZiI6MTc0OTEzMzI4MywianRpIjoiSjVESTA2cTNPaTBYaUU0WCIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.os8tboeMNKqDg17AAdGXsjJlAzIXSm3u7664Q4SG79s',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMjgzLCJleHAiOjE3NDkyMTk2ODMsIm5iZiI6MTc0OTEzMzI4MywianRpIjoidVhBYjJvNWlVOUZyVGMySyIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.kPMPHVmbhUdx7UHe4cvtpA_bY-gQHis12Ue7lwzTZ4g',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzA5LCJleHAiOjE3NDkyMTk3MDksIm5iZiI6MTc0OTEzMzMwOSwianRpIjoiZHdhdlprdkV6Ynl0RnFyZSIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.QZfZ7RWnpkJEuTWtq3IpxjqeQnEiPfR-Rbvl1atx8vI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzA5LCJleHAiOjE3NDkyMTk3MDksIm5iZiI6MTc0OTEzMzMwOSwianRpIjoiRlI4NlVCNXZKUnc5Vk5sNCIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.M83PammQu27woO4vJPg8mMVZx3uOjr07ne0GYFi5bPI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzA5LCJleHAiOjE3NDkyMTk3MDksIm5iZiI6MTc0OTEzMzMwOSwianRpIjoiR0t5RjFpY2t1Q09SR3NZTiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.RuDUI3MSP7-PaFNLXOrCuFdSxfoDl3Q-vBHLCubZTZ4',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 1 active, 0 terminated, 1 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzU4LCJleHAiOjE3NDkyMTk3NTgsIm5iZiI6MTc0OTEzMzM1OCwianRpIjoiT1BBVVNlY2xRODhhb1RJRSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.UEVM7L07JZGq5roCnMTUxfWVw304wpehp7IqCCQ6ToQ',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzU5LCJleHAiOjE3NDkyMTk3NTksIm5iZiI6MTc0OTEzMzM1OSwianRpIjoiaGdBYmJueWRpbG56WVBCMyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.6S5UExoDsd96LQQXZeIvQn4I0lakYlhhzdrwbm-yhWY',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzU5LCJleHAiOjE3NDkyMTk3NTksIm5iZiI6MTc0OTEzMzM1OSwianRpIjoiTE1YMU9jVkN5RXNkRm9OSyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.3hx3Eh8sbAjIuDfaJw2ZvYMVJg8rKYgNg9pyXzTEx9I',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzU5LCJleHAiOjE3NDkyMTk3NTksIm5iZiI6MTc0OTEzMzM1OSwianRpIjoiVHE3U0JOb2RWQjduMDlsbiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.3nastDHAq2ZzJ3M9Bw04Smo5z_xHze-wIiEdQSNk1Tk',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzYzLCJleHAiOjE3NDkyMTk3NjMsIm5iZiI6MTc0OTEzMzM2MywianRpIjoiQTZvSDdtUjVudGRNeUgxUSIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.VX_H7q8t9hpUnjI5vqUucUNJQjlfSjoHeQe0hjWnE3U',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzYzLCJleHAiOjE3NDkyMTk3NjMsIm5iZiI6MTc0OTEzMzM2MywianRpIjoiWjlVRnJJamtHTjRCdkRXZCIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.mp2EII9vJPh8SGAo_9GzaX7zq_czUfOIv36v3WSCz1g',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzYzLCJleHAiOjE3NDkyMTk3NjMsIm5iZiI6MTc0OTEzMzM2MywianRpIjoiQVRpaDhQUGhIbVc1VlpvbiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.cRpxLIzS10gGBuNb5y56E7to8UyW-Z9Z2g5VnbW2dy4',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzYzLCJleHAiOjE3NDkyMTk3NjMsIm5iZiI6MTc0OTEzMzM2MywianRpIjoiOU5JMGV1ZUFFNERtSUVyQyIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.rEY09KUnnAmFgrgoDbnI5LyZMCHu9-fmdLZIQhNndoo',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Received message on channel conversation.2: {
+  event: 'new_message',
+  data: {
+    conversation_id: 2,
+    message: {
+      id: 39,
+      content: 'sveiki',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-05 14:22:47',
+      time: '02:22 PM'
+    },
+    content: 'sveiki',
+    sender_id: 1749133359105,
+    user_id: 1749133359105,
+    user_name: 'admin2@admin.lv',
+    timestamp: '2025-06-05T14:22:47.202Z',
+    _sender: {
+      id: 1749133359105,
+      timestamp: '2025-06-05T14:22:47.202Z',
+      clientId: 'client-dbk3hlqa-1749133367202'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.2
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzY3LCJleHAiOjE3NDkyMTk3NjcsIm5iZiI6MTc0OTEzMzM2NywianRpIjoiMUZKQ2FWTGQ1azVYUXpTeCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.WALw0x-I5KoDJS4s0xpRXwPxqq07gPL375rBcQZsszM',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzY3LCJleHAiOjE3NDkyMTk3NjcsIm5iZiI6MTc0OTEzMzM2NywianRpIjoiQjIwOU9MbnZUcHl5bXMzeiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.A6fyZZakiYT6bWciR3J9IwfoVtmhSr3zQFSKuKtVaYs',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Received message on channel conversation.2: {
+  event: 'new_message',
+  data: {
+    conversation_id: 2,
+    message: {
+      id: 40,
+      content: 'kaa iet',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-05 14:22:52',
+      time: '02:22 PM'
+    },
+    content: 'kaa iet',
+    sender_id: 1749133363644,
+    user_id: 1749133363644,
+    user_name: 'Krists',
+    timestamp: '2025-06-05T14:22:52.125Z',
+    _sender: {
+      id: 1749133363644,
+      timestamp: '2025-06-05T14:22:52.125Z',
+      clientId: 'client-a1g0yvkt-1749133372125'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.2
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzcyLCJleHAiOjE3NDkyMTk3NzIsIm5iZiI6MTc0OTEzMzM3MiwianRpIjoiSjFDRDlKbGZwZDZIaU81UCIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.eZwR_bGJZOQZQf8HKbc03PDmb3cCjTkE68f171tCXhY',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzMzcyLCJleHAiOjE3NDkyMTk3NzIsIm5iZiI6MTc0OTEzMzM3MiwianRpIjoiS29aeU1HaWdiWVBzWkR1VyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.cUDWnix34mSjLaRErbYWRspirJe0J9SzcUz6-6TRtpA',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzNjMwLCJleHAiOjE3NDkyMjAwMzAsIm5iZiI6MTc0OTEzMzYzMCwianRpIjoiZ05HS25WVDg4ZlVXMm0wZiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.qr2U0YMl1mbi5sZ7EZt4YYSpaOo3vdDrPLZjcZ9bDxM',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzNjMwLCJleHAiOjE3NDkyMjAwMzAsIm5iZiI6MTc0OTEzMzYzMCwianRpIjoiNjlWYVhiV0VXcDhnZnBPWiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.9Vx1oi5_jpepQTplTdgrU2KHdx-eLHHaLg7Cudspw4g',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzNjMwLCJleHAiOjE3NDkyMjAwMzAsIm5iZiI6MTc0OTEzMzYzMCwianRpIjoiTzZJWFRLZTFROWtIeVVEdSIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.p98GeGl5cqAZMe5k4rZEK3TErn0b9bN9RUnfUqXuUP8',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTMzNjMwLCJleHAiOjE3NDkyMjAwMzAsIm5iZiI6MTc0OTEzMzYzMCwianRpIjoiZDlJV2VETDlqSmIyQTQ2RSIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.ftexDeFOEQWFgR5gytVpngXPqwIyCA-85_epTn4UxkM',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM0Mjk0LCJleHAiOjE3NDkyMjA2OTQsIm5iZiI6MTc0OTEzNDI5NCwianRpIjoiSTQ1VkRsQzEwQW1NU2YyaCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.3uo8kRiQJm5Jh7uleruh9tFu3y7rjRDwgF_v8BynXE4',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM0Mjk0LCJleHAiOjE3NDkyMjA2OTQsIm5iZiI6MTc0OTEzNDI5NCwianRpIjoiblBHcHJ4T09rSTJRYUY2bCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.0kRB0FkDvbejsnMzQb61f0WoNv4X20YXgxGBP6orY10',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM0Mjk1LCJleHAiOjE3NDkyMjA2OTUsIm5iZiI6MTc0OTEzNDI5NSwianRpIjoiZ1BFTlBxVjVydlo0ckxxRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.88a1xFDC0Aaa7wLTHSEpYiiGg53heYHYLgZn3fObmQQ',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM0Mjk1LCJleHAiOjE3NDkyMjA2OTUsIm5iZiI6MTc0OTEzNDI5NSwianRpIjoiS2dVN3JmNHhBZXV5MGZFRiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6InRlc3RAdGVzdC5sdiIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.mfycxxuO9pA5SzX9Kio6yC_xk-r38n-Gl17IJQX5Ywo',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3ODgzLCJleHAiOjE3NDkyMjQyODMsIm5iZiI6MTc0OTEzNzg4MywianRpIjoidDFLNFdwV0F5NEN1cER4NSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.51ZdegEnx7fzV1sWpkSGZ8SweGAq12Utudn92HQnVPU',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3ODgzLCJleHAiOjE3NDkyMjQyODMsIm5iZiI6MTc0OTEzNzg4MywianRpIjoibDhBU013dEh2UlZ2b1R4RSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.Exw1HtWo5bDhdmty3Nalwnqbcw-qOVZD6Uavv71qUjI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3ODgzLCJleHAiOjE3NDkyMjQyODMsIm5iZiI6MTc0OTEzNzg4MywianRpIjoiT1ZiUmNOTnhJRENMQ2NKZCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.TR5UIsePCGfoAdWa7bUDF3fE1DM6Fc0xka7XtVdprR8',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3ODgzLCJleHAiOjE3NDkyMjQyODMsIm5iZiI6MTc0OTEzNzg4MywianRpIjoiT21wQndjQzlsNTM5czJmbSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.Yi9hn7P7N19-Zl04uUL_CVvJpEsOFbysJoOQ1htTJY0',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 3 active, 0 terminated, 3 total connections
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTA4LCJleHAiOjE3NDkyMjQzMDgsIm5iZiI6MTc0OTEzNzkwOCwianRpIjoiWEhKaDhwRHpHQ3JweGdYYyIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.kSWU8TACHx9VNW7G3SNI7MpXUU7TGcPs2zqAxtDbXrg',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTA5LCJleHAiOjE3NDkyMjQzMDksIm5iZiI6MTc0OTEzNzkwOSwianRpIjoiR3dVTnJibmd1V0o0OWRRZiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.XbLNb2z07JtjTyBJ2e7LTBAZvVt0kZeYHGp7qeiNUBg',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTA5LCJleHAiOjE3NDkyMjQzMDksIm5iZiI6MTc0OTEzNzkwOSwianRpIjoiZjJKRXAxWEVzSjc2WEpkQyIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.mRS5D8wts2p6TNzICPYUnu5eH74GYNW69DsjLai2d-I',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTA5LCJleHAiOjE3NDkyMjQzMDksIm5iZiI6MTc0OTEzNzkwOSwianRpIjoiVm5MamNEbTRLQnlYSUNSWSIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.n5fQd-ep0B0vKxw_j8-5jG_lmmLPvlmZwhvO_Q1F9Ww',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Received message on channel conversation.2: {
+  event: 'new_message',
+  data: {
+    conversation_id: 2,
+    message: {
+      id: 41,
+      content: 'sveiki',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-05 15:38:35',
+      time: '03:38 PM'
+    },
+    content: 'sveiki',
+    sender_id: 1749137909028,
+    user_id: 1749137909028,
+    user_name: 'Krists',
+    timestamp: '2025-06-05T15:38:35.489Z',
+    _sender: {
+      id: 1749137909028,
+      timestamp: '2025-06-05T15:38:35.489Z',
+      clientId: 'client-0nyzc3aa-1749137915489'
+    }
+  }
+}
+[WebSocket] Broadcasting to 3 clients on channel conversation.2
+[WebSocket] Successfully broadcast to 3 clients
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTE1LCJleHAiOjE3NDkyMjQzMTUsIm5iZiI6MTc0OTEzNzkxNSwianRpIjoiUVAyY2R5Njl0aUh0QzJMaiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.IA9BKuVx9pDshnkMkaagMzwV77TwBiJ8H6sJH8vhwEw',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTE1LCJleHAiOjE3NDkyMjQzMTUsIm5iZiI6MTc0OTEzNzkxNSwianRpIjoiOWhodnYwZWpkRHN4bFEzViIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.xhdPeuEUxD5zCCUwCfCRf6OMCue12mq8We6BWnTG614',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTE1LCJleHAiOjE3NDkyMjQzMTUsIm5iZiI6MTc0OTEzNzkxNSwianRpIjoiR1VieVhaUmw5Q29RUlJrRSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6ImFkbWluMkBhZG1pbi5sdiIsImVtYWlsIjoiYWRtaW4yQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.ghyrx9-F1awTmGsc7ZvJVNNPzGeFBmoYIikiJ17epq4',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 3
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTY2LCJleHAiOjE3NDkyMjQzNjYsIm5iZiI6MTc0OTEzNzk2NiwianRpIjoiUE1JTWVlcEI4YmZxTnNwZCIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.s-6gj1xTTfhTCcBrmyp_LUMjISo63avkjDZj-lBztnY',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTY2LCJleHAiOjE3NDkyMjQzNjYsIm5iZiI6MTc0OTEzNzk2NiwianRpIjoieVJ6bUg3V2lyNExUYWpZcCIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.G578GBQR0wMlGYJjifWmpsVg1PxtHQ5yD-TZdtrXZwI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: global
+[WebSocket] Client disconnected from channel: global
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTY3LCJleHAiOjE3NDkyMjQzNjcsIm5iZiI6MTc0OTEzNzk2NywianRpIjoieWxEOTJxc0lyYWtiZEpHaiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.CehXqGuzBEKrtXOGuijgsQlkLdoEJmx6ZFeUjO_oZmQ',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/conversation.2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzQ5MTM3OTY3LCJleHAiOjE3NDkyMjQzNjcsIm5iZiI6MTc0OTEzNzk2NywianRpIjoidENwWVJCb2NwNmNtTzVjMyIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IktyaXN0cyIsImVtYWlsIjoia3Jpc3RzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIn0.j-Gqlt1GaKye5f_Bwn2F7tOfHXG4BK_neL6BdOtuCN8',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 4
+[WebSocket] Client connected to channel: conversation.2
+[WebSocket] Ping status: 5 active, 0 terminated, 5 total connections
+[WebSocket] Ping status: 5 active, 0 terminated, 5 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Client disconnected from channel: conversation.2
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Ping status: 4 active, 0 terminated, 4 total connections
+[WebSocket] Connection attempt: {
+  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from auth_token cookie
+[WebSocket] JWT verification failed: jwt malformed
