@@ -67,7 +67,7 @@ echo -e "${GREEN}WebSocket server started (PID: $WEBSOCKET_PID)${NC}"
 # Start Next.js frontend
 echo -e "${BLUE}Starting Next.js frontend...${NC}"
 cd frontend
-npm run dev > ../logs/frontend.log 2>&1 &
+GENERATE_SOURCEMAP=false DISABLE_ESLINT_PLUGIN=true REACT_EDITOR=none FAST_REFRESH=false TSC_COMPILE_ON_ERROR=true npm run dev > ../logs/frontend.log 2>&1 &
 FRONTEND_PID=$!
 cd ..
 echo -e "${GREEN}Next.js frontend started (PID: $FRONTEND_PID)${NC}"

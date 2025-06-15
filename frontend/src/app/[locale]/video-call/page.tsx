@@ -1,15 +1,76 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Video, VideoOff, Mic, MicOff, Phone, Monitor, Settings, Users, MessageCircle } from 'lucide-react';
 
 export default function VideoCallPage() {
   const router = useRouter();
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(false);
   const [isCameraOn, setIsCameraOn] = useState(true);
   const [callDuration, setCallDuration] = useState(0);
   const [isRecording, setIsRecording] = useState(false);
+  const [videoStream, setVideoStream] = useState<MediaStream | null>(null);
+  const [cameraError, setCameraError] = useState<string | null>(null);
+
+  // Initialize camera on component mount
+  useEffect(() => {
+    initializeCamera();
+
+    // Cleanup function to stop camera when component unmounts
+    return () => {
+      if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+      }
+    };
+  }, []);
+
+  // Update video element when stream changes
+  useEffect(() => {
+    if (videoRef.current && videoStream) {
+      videoRef.current.srcObject = videoStream;
+    }
+  }, [videoStream]);
+
+  const initializeCamera = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        video: true, 
+        audio: false // We'll handle audio separately if needed
+      });
+      setVideoStream(stream);
+      setCameraError(null);
+    } catch (error) {
+      console.error('Error accessing camera:', error);
+      setCameraError('Unable to access camera. Please check permissions.');
+      setIsCameraOn(false);
+    }
+  };
+
+  const stopCamera = () => {
+    if (videoStream) {
+      videoStream.getTracks().forEach(track => track.stop());
+      setVideoStream(null);
+    }
+    if (videoRef.current) {
+      videoRef.current.srcObject = null;
+    }
+  };
+
+  const startCamera = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        video: true, 
+        audio: false 
+      });
+      setVideoStream(stream);
+      setCameraError(null);
+    } catch (error) {
+      console.error('Error starting camera:', error);
+      setCameraError('Unable to start camera. Please check permissions.');
+    }
+  };
 
   // Fake call duration timer
   useEffect(() => {
@@ -27,6 +88,8 @@ export default function VideoCallPage() {
   };
 
   const handleDisconnect = () => {
+    // Stop camera before leaving
+    stopCamera();
     // Redirect back to messages or home
     router.push('/messages');
   };
@@ -35,8 +98,16 @@ export default function VideoCallPage() {
     setIsMuted(!isMuted);
   };
 
-  const toggleCamera = () => {
-    setIsCameraOn(!isCameraOn);
+  const toggleCamera = async () => {
+    if (isCameraOn) {
+      // Turn off camera
+      stopCamera();
+      setIsCameraOn(false);
+    } else {
+      // Turn on camera
+      await startCamera();
+      setIsCameraOn(true);
+    }
   };
 
   const toggleRecording = () => {
@@ -93,21 +164,26 @@ export default function VideoCallPage() {
           </div>
         </div>
 
-        {/* Local video (you) */}
+        {/* Local video (you) - Real camera feed */}
         <div className="relative bg-gray-800 rounded-lg overflow-hidden">
-          <div className={`aspect-video ${isCameraOn ? 'bg-gradient-to-br from-green-900 to-teal-900' : 'bg-gray-700'} flex items-center justify-center`}>
-            {isCameraOn ? (
-              <div className="text-center text-white">
-                <div className="w-24 h-24 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold">YO</span>
-                </div>
-                <h3 className="text-xl font-semibold">You</h3>
-                <p className="text-gray-300">Job Applicant</p>
-              </div>
+          <div className="aspect-video relative">
+            {isCameraOn && videoStream ? (
+              <video
+                ref={videoRef}
+                autoPlay
+                playsInline
+                muted
+                className="w-full h-full object-cover"
+              />
             ) : (
-              <div className="text-center text-gray-400">
-                <VideoOff className="w-16 h-16 mx-auto mb-4" />
-                <p className="text-lg">Camera Off</p>
+              <div className="w-full h-full bg-gray-700 flex items-center justify-center">
+                <div className="text-center text-gray-400">
+                  <VideoOff className="w-16 h-16 mx-auto mb-4" />
+                  <p className="text-lg">Camera Off</p>
+                  {cameraError && (
+                    <p className="text-sm text-red-400 mt-2">{cameraError}</p>
+                  )}
+                </div>
               </div>
             )}
           </div>
@@ -118,6 +194,23 @@ export default function VideoCallPage() {
               <div className={`w-2 h-2 rounded-full ${isMuted ? 'bg-red-500' : 'bg-green-500'}`}></div>
               <span className="text-sm font-medium">You</span>
               {isMuted ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
+            </div>
+          </div>
+
+          {/* Camera status indicator */}
+          <div className="absolute top-4 right-4 bg-black/50 rounded-lg px-2 py-1">
+            <div className="flex items-center gap-1 text-white text-xs">
+              {isCameraOn && videoStream ? (
+                <>
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span>Live</span>
+                </>
+              ) : (
+                <>
+                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                  <span>Off</span>
+                </>
+              )}
             </div>
           </div>
         </div>

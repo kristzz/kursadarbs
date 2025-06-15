@@ -109,3 +109,40 @@ a:hover {
   cursor: pointer;
 }
 
+/* Hide Next.js error overlays and development indicators completely */
+div[data-nextjs-dialog-overlay],
+div[data-nextjs-toast],
+div[data-nextjs-dialog],
+div[data-nextjs-error-overlay],
+div[data-nextjs-portal],
+div[id*="__next-build-watcher"],
+div[class*="__next-build-watcher"],
+div[class*="next-error-overlay"],
+div[class*="nextjs-toast"],
+div[class*="nextjs-portal"],
+div[class*="build-error"],
+div[class*="compile-error"],
+div[class*="runtime-error"],
+iframe[name="__next-build-watcher"],
+[data-nextjs-dialog-overlay] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -999999 !important;
+}
+
+/* Hide any error notification elements */
+div[role="alert"],
+div[aria-live="polite"],
+div[aria-atomic="true"] {
+  display: none !important;
+}
+
+/* Hide development indicators */
+div[style*="position: fixed"][style*="bottom"],
+div[style*="position: fixed"][style*="top"],
+div[style*="z-index: 9999"] {
+  display: none !important;
+}
+

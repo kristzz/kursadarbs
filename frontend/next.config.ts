@@ -13,17 +13,12 @@ const nextConfig = {
     NEXT_PUBLIC_WEBSOCKET_PORT: process.env.NEXT_PUBLIC_WEBSOCKET_PORT || '6001',
     NEXT_PUBLIC_WEBSOCKET_SECURE: process.env.NEXT_PUBLIC_WEBSOCKET_SECURE || 'false',
   },
-  // Add additional configuration as needed
-  reactStrictMode: true,
+  // Disable development features that cause popups
+  reactStrictMode: false,
   swcMinify: true,
-  // Disable development overlays and indicators for presentations
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production' ? true : false,
-  },
-  // Disable error overlay in development
+  // Disable all development indicators
   devIndicators: {
     buildActivity: false,
-    buildActivityPosition: 'bottom-right',
   },
   // Configure CORS if needed
   async headers() {
