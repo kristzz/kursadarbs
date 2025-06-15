@@ -11,117 +11,43 @@
 [WebSocket] Authentication enabled
 [WebSocket] Allowed origins: http://localhost:3000, http://127.0.0.1:3000
 [WebSocket] Connection attempt: {
-  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from auth_token cookie
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzQ2LCJleHAiOjE3NTAxMTMxNDYsIm5iZiI6MTc1MDAyNjc0NiwianRpIjoia09vdUxkbVJQZXZha1dUZCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.PtzXDbb9srXkUa5KTXZ4Kyn7cgdho5kOti0N-QCmQiU',
   origin: 'http://localhost:3000',
   secure: false,
   hasToken: true
 }
 [WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
 [WebSocket] Connection attempt: {
-  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from auth_token cookie
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzQ2LCJleHAiOjE3NTAxMTMxNDYsIm5iZiI6MTc1MDAyNjc0NiwianRpIjoiMlNtOThQd01jalh1ZGZHRSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.zch7VaUW-0xQYu0PoUuv3V-B41erBIEcOgB01nOEXho',
   origin: 'http://localhost:3000',
   secure: false,
   hasToken: true
 }
 [WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
 [WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzcwLCJleHAiOjE3NTAxMTMxNzAsIm5iZiI6MTc1MDAyNjc3MCwianRpIjoiaW45emxuVTBCSnVFWlNyZiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.G_otkTfwFjOeqRldkFikI4vXFE7YckaaBK_lfIQqlaU',
   origin: 'http://localhost:3000',
   secure: false,
   hasToken: true
 }
 [WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: global
 [WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
+  url: '/global?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzcwLCJleHAiOjE3NTAxMTMxNzAsIm5iZiI6MTc1MDAyNjc3MCwianRpIjoiODd5VVc3WFlWd0NmZmdCdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.H5_tCVyGTnhb6xzIlrVlhHFovEQ4hDBnOOph3vJmgw8',
   origin: 'http://localhost:3000',
   secure: false,
   hasToken: true
 }
 [WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: global
 [WebSocket] Connection attempt: {
   url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
   origin: 'http://localhost:3000',
@@ -131,22 +57,6 @@
 [WebSocket] Using token from auth_token cookie
 [WebSocket] JWT verification failed: jwt malformed
 [WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
   url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
   origin: 'http://localhost:3000',
   secure: false,
@@ -154,27 +64,750 @@
 }
 [WebSocket] Using token from auth_token cookie
 [WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Received message on channel global: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 6,
+      content: 'a',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:08',
+      time: '10:33 PM'
+    },
+    content: 'a',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:08.551Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:08.551Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel global
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: global
 [WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzg4LCJleHAiOjE3NTAxMTMxODgsIm5iZiI6MTc1MDAyNjc4OCwianRpIjoiZE1RamlmSG5iMkZIQkt6SyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.tywHV25aJ8oca91izHKaNbc2E1PZjlO-hGrw71f8wKY',
   origin: 'http://localhost:3000',
   secure: false,
   hasToken: true
 }
 [WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: global
 [WebSocket] Connection attempt: {
-  url: '/app/local?protocol=7&client=js&version=8.4.0&flash=false',
-  origin: 'http://localhost:3000',
-  secure: false,
-  hasToken: true
-}
-[WebSocket] Using token from auth_token cookie
-[WebSocket] JWT verification failed: jwt malformed
-[WebSocket] Connection attempt: {
-  url: '/global?token=eyJpdiI6ImJZUGMxQURZTm5UM0ZLN1llOWdDK2c9PSIsInZhbHVlIjoiOGsvYjhEdWFJcmRSc0xyblN6eHc3VDRPbWU1TzBtZHJCSVRvSnVTd3lWTzJhTVZaWnMzQmRHWXFlTzZhTjg4WUNlUUJvbmF6NFA5TUxtQWFjdTl3TzZmZTF1VVJpRktTdHZyVk91R3MwdldQcGl0YkgrWE1JSi9UOHBtaUdiQ2QiLCJtYWMiOiIwNTU5MTY1MjEzNTZiNWY4MzM5NmFhMjQyMmUwODQzNTllNGE3OGQ0NmUzYzgyY2M5ZDQ5M2M4ZTQyNWI5NjhkIiwidGFnIjoiIn0%253D',
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzg4LCJleHAiOjE3NTAxMTMxODgsIm5iZiI6MTc1MDAyNjc4OCwianRpIjoiblFVczA4czB0YUNVZlNNZyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.h7U0eqKgq2_LjUl6gN105283jotzNWJGURIKxCo0ubc',
   origin: 'http://localhost:3000',
   secure: false,
   hasToken: true
 }
 [WebSocket] Using token from query parameter
-[WebSocket] JWT verification failed: jwt malformed
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 7,
+      content: 's',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:10',
+      time: '10:33 PM'
+    },
+    content: 's',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:10.364Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:10.364Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkwLCJleHAiOjE3NTAxMTMxOTAsIm5iZiI6MTc1MDAyNjc5MCwianRpIjoieXNjTkdaTHZ4WG9jYVptTiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.sD00vc2pvl6y8pSlCRR3TVI7qufOyfhvD-0QUDdFChk',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkwLCJleHAiOjE3NTAxMTMxOTAsIm5iZiI6MTc1MDAyNjc5MCwianRpIjoibTYxUG9GNWo3cXhMeE50cyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.qGP6ZdxYtoLTPZW6P0aMW7kxsjtr_WZqNY5Ese8YXlI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 8,
+      content: 'v',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:10',
+      time: '10:33 PM'
+    },
+    content: 'v',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:10.847Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:10.847Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkwLCJleHAiOjE3NTAxMTMxOTAsIm5iZiI6MTc1MDAyNjc5MCwianRpIjoibGRJd0E5TnVuQ3FBYmxQSSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.60iiRvv5XA4xx6LCuHLmkHilQY1JaJBRSWIhzUOKB10',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkwLCJleHAiOjE3NTAxMTMxOTAsIm5iZiI6MTc1MDAyNjc5MCwianRpIjoiSjIyOWE2b3JrOHE0TkMzYSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.6ykdP5Ge16aYXFd1x4r7XQstSFxekSmszApZmWS1V_M',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 9,
+      content: 'w',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:11',
+      time: '10:33 PM'
+    },
+    content: 'w',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:11.264Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:11.264Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkxLCJleHAiOjE3NTAxMTMxOTEsIm5iZiI6MTc1MDAyNjc5MSwianRpIjoiZWFnUFB4bllzcGJSWGZNdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.JUvpyDrnsIez23_p1S9n6QRhzreGhuX1D70Frp-2bUA',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkxLCJleHAiOjE3NTAxMTMxOTEsIm5iZiI6MTc1MDAyNjc5MSwianRpIjoiV3ZpVnpyMTFVSEVqZ2NJOSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.0gXiqEQ1_fu_OWLpOxLJelqfqAaAo9sHofFgmQSOEHk',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 10,
+      content: 'q',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:11',
+      time: '10:33 PM'
+    },
+    content: 'q',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:11.616Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:11.616Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkxLCJleHAiOjE3NTAxMTMxOTEsIm5iZiI6MTc1MDAyNjc5MSwianRpIjoiT3JnWGtQRzdoU092em9xeSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.tt4JlmkRIF2gvOi4d7w6Q2-SMPeVZHQuGa9udzpvDv0',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkxLCJleHAiOjE3NTAxMTMxOTEsIm5iZiI6MTc1MDAyNjc5MSwianRpIjoielBMVktHeDhWNVdBMHdGdyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.0bGOmeBs59Z9MSJHwPq-Wrs4tj4zK0kwYuV6ouX4e7w',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 11,
+      content: 'f',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:11',
+      time: '10:33 PM'
+    },
+    content: 'f',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:11.939Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:11.939Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkxLCJleHAiOjE3NTAxMTMxOTEsIm5iZiI6MTc1MDAyNjc5MSwianRpIjoidnltNVpNa3NwamI4RVZjaCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.28oSyp_yLYxFwaoM8vOMLgcowr9hAdyM0MsDZgZBJM4',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkxLCJleHAiOjE3NTAxMTMxOTEsIm5iZiI6MTc1MDAyNjc5MSwianRpIjoiWXVvemNBUnFIR1dDdlJMSCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.odfW9qc26nvpJ-PXUMRUhAZALiYWjLlSORSPVGEEvT4',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 12,
+      content: 'r',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:12',
+      time: '10:33 PM'
+    },
+    content: 'r',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:12.270Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:12.270Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkyLCJleHAiOjE3NTAxMTMxOTIsIm5iZiI6MTc1MDAyNjc5MiwianRpIjoiOEo2TXY5eUFoT0s5OE1WayIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.W7-NYeTZoqg1nWrm3EsKtCc8z0ahZkanNmbpdF2Iepo',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkyLCJleHAiOjE3NTAxMTMxOTIsIm5iZiI6MTc1MDAyNjc5MiwianRpIjoiN05HZGU4M1hUR2FWWGpHcCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.x-PO4AAKVW1t7pexp9iCTKpZnpQX2GBDsFpPtfkkEAE',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 13,
+      content: 's',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:12',
+      time: '10:33 PM'
+    },
+    content: 's',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:12.551Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:12.551Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkyLCJleHAiOjE3NTAxMTMxOTIsIm5iZiI6MTc1MDAyNjc5MiwianRpIjoieXdXS2ZYRGVOYVduRUIxTyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.Q3Nu77U0jnNSXqbt_dqWqWNt8U_gYHfl1VWkXyXJkZg',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkyLCJleHAiOjE3NTAxMTMxOTIsIm5iZiI6MTc1MDAyNjc5MiwianRpIjoiSENmNnlYbUdoSjN1THVKVyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.DNQJm_01u317V8kZuMEU90QAF2CJcBI-p9SnVY2MbaI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 14,
+      content: 'a',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:12',
+      time: '10:33 PM'
+    },
+    content: 'a',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:12.787Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:12.787Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkyLCJleHAiOjE3NTAxMTMxOTIsIm5iZiI6MTc1MDAyNjc5MiwianRpIjoiM0dMOHFGcjgyZ09vb0xPayIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.Eykk9BVJkytuc5BtyS5qB6whoqJrKwigPwktsyxc_aM',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkyLCJleHAiOjE3NTAxMTMxOTIsIm5iZiI6MTc1MDAyNjc5MiwianRpIjoiNWZUaFZpcGJNajJJenNicCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.Y9bz7VaRs9UnmJDFl1Z5z2si_U8P5eK68eiF6miQXOU',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 15,
+      content: 'q',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:13',
+      time: '10:33 PM'
+    },
+    content: 'q',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:13.080Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:13.080Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoibHlRS0lmU2Vra3gxSmNCNiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.ADCMAeJ5azyla4Z07XvC6g20KLEOYGoQxQnk2BCJVkk',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoidmpvYmNTRE53eVNVRUNDTyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.NwIrUUsHNDAxQvfGg3_ECn6--gAyoFQZaNxEZMEr4vg',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 16,
+      content: 'q',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:13',
+      time: '10:33 PM'
+    },
+    content: 'q',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:13.401Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:13.401Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoiT3ZjaEdTcFg1U013emU2MyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.okVKEylb3RSBj6q7Q4cpvtk1LZ6QJxPVyp_819x4ob0',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoiVW5ET0FHVVQ0NlVYZWV6QyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.h934ny83rnggvgb7yNGFuaSLo2XNHDFYgr3Y_SOyoFE',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 17,
+      content: 'e',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:13',
+      time: '10:33 PM'
+    },
+    content: 'e',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:13.597Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:13.597Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoiTVl3YkRla3ZWNlhlTmNZaSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.P1MKRgGFkLT1oehFKaLRaOTcBE4IxwggxdGs0YklakE',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoiNkpmTFZKT3F3Y2JSOThDUyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.DXnS9N65h46BQ_Uz10yEmchBWCp09Ai55vFK6_EVzUc',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 18,
+      content: 'q',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:13',
+      time: '10:33 PM'
+    },
+    content: 'q',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:13.825Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:13.825Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoidWpWdHdDS2lFdnVSMWVSQSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.Q0EFIXz6Wblz0Ig2CCJS9FY4-c_cZsxnAcZhhWw7CDI',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2NzkzLCJleHAiOjE3NTAxMTMxOTMsIm5iZiI6MTc1MDAyNjc5MywianRpIjoiUW1vdEl1aW9icWNQNWVociIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.uZE7T0TvGPhSVwoem6FUwpzR8plEdPOeQoLdhhOnIO8',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 19,
+      content: 'qw',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:14',
+      time: '10:33 PM'
+    },
+    content: 'qw',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:14.135Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:14.135Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoiRFdqNzZQSU9IZTZNZFVKZCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.dGtxMgdwwUM1NKRs88_X796VAEw8o6rbIwlU-QlhXF0',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoiZ3dTazEwZHlRa2tidUJhUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.fBb_0V0qJ6nqFUn5rXiIO7Tu_tyQOrAn9VD8C2FdUUY',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 20,
+      content: 'q',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:14',
+      time: '10:33 PM'
+    },
+    content: 'q',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:14.314Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:14.314Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoieHpSRmFLbktOaTJETkQ5UiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.SO9qXGJgAQBrpSKV_VIOP9iPl_RaZLL63CsA-RQN-tQ',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoic0UzSXk4NlNpTHRLcEswRyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.e-YO8tiuYn5IZuxzr-wi_CVsofd7KoB3ni4ACKAbWNc',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoiZHExNmZPYUJicEZWbUVVTiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.7Jl8OeqfAx-LTY19X6ZJewCX_mF3a30StE0F4r_YL8Y',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Received message on channel conversation.1: {
+  event: 'new_message',
+  data: {
+    conversation_id: 1,
+    message: {
+      id: 21,
+      content: 'w',
+      is_mine: true,
+      user: [Object],
+      created_at: '2025-06-15 22:33:14',
+      time: '10:33 PM'
+    },
+    content: 'w',
+    sender_id: 1750026770588,
+    user_id: 1750026770588,
+    user_name: 'Test User',
+    timestamp: '2025-06-15T22:33:14.540Z',
+    _sender: {
+      id: 1750026770588,
+      timestamp: '2025-06-15T22:33:14.540Z',
+      clientId: 'client-eviaa5qj-1750026788551'
+    }
+  }
+}
+[WebSocket] Broadcasting to 2 clients on channel conversation.1
+[WebSocket] Successfully broadcast to 2 clients
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoiQzY4OUxKejZQUDlNd09xdCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIFVzZXIiLCJlbWFpbCI6ImFkbWluQGFkbWluLmx2Iiwicm9sZSI6ImVtcGxveWVyIn0.wqF426UCcHK9g7SeK5ySdljWCs5TScupgUCAsl4XhEU',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 2
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Client disconnected from channel: conversation.1
+[WebSocket] Connection attempt: {
+  url: '/conversation.1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3dzLXRva2VuIiwiaWF0IjoxNzUwMDI2Nzk0LCJleHAiOjE3NTAxMTMxOTQsIm5iZiI6MTc1MDAyNjc5NCwianRpIjoiN0Q3MFdhNktKcXRZb1JSVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IlRlc3QgVXNlciIsImVtYWlsIjoidGVzdEB0ZXN0Lmx2Iiwicm9sZSI6InVzZXIifQ.EY1dyjoV69ewr7Z_ur1AwZhwRG4XU3Kfacqo911Pm2Y',
+  origin: 'http://localhost:3000',
+  secure: false,
+  hasToken: true
+}
+[WebSocket] Using token from query parameter
+[WebSocket] Authentication successful with JWT for user: 1
+[WebSocket] Client connected to channel: conversation.1
+[WebSocket] Ping status: 2 active, 0 terminated, 2 total connections
