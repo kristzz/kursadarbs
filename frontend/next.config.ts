@@ -16,6 +16,15 @@ const nextConfig = {
   // Add additional configuration as needed
   reactStrictMode: true,
   swcMinify: true,
+  // Disable development overlays and indicators for presentations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? true : false,
+  },
+  // Disable error overlay in development
+  devIndicators: {
+    buildActivity: false,
+    buildActivityPosition: 'bottom-right',
+  },
   // Configure CORS if needed
   async headers() {
     return [
