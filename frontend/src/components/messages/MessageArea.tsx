@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import { Video, VideoOff, Phone, PhoneOff } from 'lucide-react';
 
 interface Message {
@@ -43,6 +44,7 @@ const MessageArea: React.FC<MessageAreaProps> = ({
   sendMessage: externalSendMessage,
 }) => {
   const t = useTranslations('Messages');
+  const router = useRouter();
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [localNewMessage, setLocalNewMessage] = useState('');
 
@@ -77,48 +79,64 @@ const MessageArea: React.FC<MessageAreaProps> = ({
   };
 
   // Video call invite message component
-  const VideoCallInvite = () => (
-    <div className="max-w-md bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-4 text-white shadow-lg rounded-bl-none">
-      <div className="flex items-center gap-3 mb-3">
-        <div className="bg-white/20 p-2 rounded-full">
-          <Video className="w-5 h-5" />
-        </div>
-        <div>
-          <h4 className="font-semibold text-white text-sm">Video Call Invitation</h4>
-          <p className="text-blue-100 text-xs">Join the video call to discuss your application</p>
-        </div>
-      </div>
-      
-      <div className="bg-white/10 rounded-lg p-2 mb-3">
-        <div className="flex items-center justify-between mb-1">
-          <span className="text-xs font-medium">Meeting Details</span>
-          <span className="text-xs text-blue-100">Today, 2:30 PM</span>
-        </div>
-        <p className="text-xs text-blue-100">Duration: ~30 minutes</p>
-        <p className="text-xs text-blue-100">Interview discussion</p>
-      </div>
+  const VideoCallInvite = () => {
+    const handleJoinCall = () => {
+      router.push('/video-call');
+    };
 
-      <div className="flex gap-2">
-        <button className="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-1.5 rounded-md text-xs font-medium transition-colors flex items-center justify-center gap-1">
-          <Video className="w-3 h-3" />
-          Join Call
-        </button>
-        <button className="flex-1 bg-white/20 hover:bg-white/30 text-white px-3 py-1.5 rounded-md text-xs font-medium transition-colors flex items-center justify-center gap-1">
-          <Phone className="w-3 h-3" />
-          Audio Only
-        </button>
+    const handleAudioOnly = () => {
+      router.push('/video-call');
+    };
+
+    return (
+      <div className="max-w-md bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-4 text-white shadow-lg rounded-bl-none">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="bg-white/20 p-2 rounded-full">
+            <Video className="w-5 h-5" />
+          </div>
+          <div>
+            <h4 className="font-semibold text-white text-sm">Video Call Invitation</h4>
+            <p className="text-blue-100 text-xs">Join the video call to discuss your application</p>
+          </div>
+        </div>
+        
+        <div className="bg-white/10 rounded-lg p-2 mb-3">
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-xs font-medium">Meeting Details</span>
+            <span className="text-xs text-blue-100">Today, 2:30 PM</span>
+          </div>
+          <p className="text-xs text-blue-100">Duration: ~30 minutes</p>
+          <p className="text-xs text-blue-100">Interview discussion</p>
+        </div>
+
+        <div className="flex gap-2">
+          <button 
+            onClick={handleJoinCall}
+            className="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-1.5 rounded-md text-xs font-medium transition-colors flex items-center justify-center gap-1"
+          >
+            <Video className="w-3 h-3" />
+            Join Call
+          </button>
+          <button 
+            onClick={handleAudioOnly}
+            className="flex-1 bg-white/20 hover:bg-white/30 text-white px-3 py-1.5 rounded-md text-xs font-medium transition-colors flex items-center justify-center gap-1"
+          >
+            <Phone className="w-3 h-3" />
+            Audio Only
+          </button>
+        </div>
+        
+        <div className="mt-2 text-center">
+          <p className="text-xs text-blue-100">
+            Meeting ID: 123-456-789
+          </p>
+        </div>
+        <div className="text-xs mt-1 text-right opacity-70">
+          2:25 PM
+        </div>
       </div>
-      
-      <div className="mt-2 text-center">
-        <p className="text-xs text-blue-100">
-          Meeting ID: 123-456-789
-        </p>
-      </div>
-      <div className="text-xs mt-1 text-right opacity-70">
-        2:25 PM
-      </div>
-    </div>
-  );
+    );
+  };
 
   if (loading) {
     return (
